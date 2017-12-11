@@ -35,6 +35,7 @@ En la primera parte del curso, aprenderemos el lenguaje de programación R:
 2. Estructuras de Datos en R.
 3. Estructuras de Control en R.
 4. Funciones en R.
+
 5. Paquetes en R.
 
 
@@ -79,3 +80,20 @@ Haz clic en la siguiente imagen para obtener el libro por tan sólo __5€__:
 
 
 <a href="https://leanpub.com/ciencia-de-datos-con-r/c/CSI5qnSGUUkL" target="_blank"><img src="https://i.imgur.com/VRMrT0I.png" width="200" height="90"></a>
+
+
+## Contacto
+
+El siguiente curso dipone una página web para el libro, puedes acceder a esta página en <a href="https://rsanchezs.gitbooks.io/ciencia-de-datos-con-r/content/" target="_blank">https://rsanchezs.gitbooks.io/ciencia-de-datos-con-r/content/</a>
+
+Para comentarios y erratas, envía un correo electrónico a <a href="mailto:ciencia.datos.con.r@gmail.com" target="_blank"><img src="https://i.imgur.com/PJGlEba.png"></a>.
+
+__Sigueme en:__
+
+<a href="https://plus.google.com/+RubénSánchezSancho?hl=es" target="_blank"><img src="https://i.imgur.com/nFk0c7l.png"></a>
+<a href="https://www.linkedin.com/in/ruben-sanchez-sancho-767993139/" target="_blank"><img src="https://i.imgur.com/ccAeFjJ.png"></a>
+<a href="https://twitter.com/rsanchezs76" target="_blank"><img src="https://i.imgur.com/DF48Oy0.png"></a>
+<a href="https://datasciencesexy.wordpress.com/" target="_blank"><img src="https://i.imgur.com/GqYvC8A.png"></a>
+<a href="https://www.youtube.com/channel/UCmM75BqRDZ1_6Ug5fZjD-Dg?view_as=subscriber" target="_blank"><img src="https://i.imgur.com/NmPCBRQ.png"></a>
+
+
