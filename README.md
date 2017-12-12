@@ -1,4 +1,9 @@
+ 
+
+
+
 # Ciencia de Datos con R
+
 
 
 La __Ciencia de Datos__ en una disciplina apasionante que permite analizar datos para extraer conocimiento o un mejor entendimiento de datos en sus diferentes formas. El objetivo principal de <a href=https://www.udemy.com/ciencia-de-datos-con-r target="_blank">Ciencia de Datos con R</a>
@@ -12,6 +17,7 @@ Dividido en cuatro partes con <a href="https://www.youtube.com/playlist?list=PLw
 
 En otras palabras, es un curso innovador que utiliza herramientas avanzadas como [RStudio](https://www.rstudio.com/), un IDE que nos facilitará los procesos de trabajo en las diferentes tareas de un proyecto de Ciencia de Datos y [`Tidyverse`](https://www.tidyverse.org/) un conjunto de paquetes que abarcan todo el flujo de trabajo en el análisis de datos, fáciles de aprender y usar.
 
+
 ## ¿Que Aprenderás con este Curso?
 
 
@@ -22,32 +28,30 @@ El objetivo de este curso es proporcionarte unos fundamentos sólidos en la gran
 
 ![Fases Proyecto en Ciencia de Datos](https://i.imgur.com/DO2BKK7.png)
 
+## ¿Cómo Está Organizado Este Curso?
 
-## ¿Cómo esta organizado este curso?
 
 El curso está organizado de acuerdo con las herramientas necesarias en un proyecto típico de Ciencia de Datos, en el orden en que las usaremos en nuestros análisis de datos.
 
 ### Programación en R
 
 En la primera parte del curso, aprenderemos el lenguaje de programación R:
-
 1. La Sintaxis de R.
 2. Estructuras de Datos en R.
 3. Estructuras de Control en R.
 4. Funciones en R.
-
 5. Paquetes en R.
 
-
-### Importar Datos en R
+### Importar Datos en 
 
 En la segunda parte del curso trataremos las dos tareas de la fase de importar datos.
 
 En primer lugar, veremos como _importar_ nuestros datos a R. Con esto queremos decir, que nos encontraremos datos almacenados en archivos, bases de datos, o en una API web, y el objetivo de esta tarea será cargar los datos en un dataframe.
 
-Una vez hemos importado nuestros datos, la siguiente tarea será _"tidy"_ nuestros datos. El objetivo de esta tarea es almacenar nuestros datos en un formato consistente en el que coincida la semántica del conjunto de datos con el medio en que están almacenados. En resumen, nuestros datos estarán en formato tidy cuando, cada variable se encuentre en una columna y cada observación en su propia fila.
 
+Una vez hemos importado nuestros datos, la siguiente tarea será _"tidy"_ nuestros datos. El objetivo de esta tarea es almacenar nuestros datos en un formato consistente en el que coincida la semántica del conjunto de datos con el medio en que están almacenados. En resumen, nuestros datos estarán en formato tidy cuando, cada variable se encuentre en una columna y cada observación en su propia fila
 ### Exploración de Datos
+
 
 En la tercera parte del curso trataremos las tareas de la fase de exploración de nuestros datos, conocido en inglés como _data wrangling_.
 
@@ -60,6 +64,7 @@ La visualización es fundamental en la actividad humana. Un visualización bien 
 ### Comunicar los Resultados
 
 El último paso en la ciencia de datos es la _comunicación_, una parte absolutamente crítica en un proyecto de análisis de datos. Indiscutiblemente, no importa lo bien que hayamos modelado o visualizado nuestros datos, si posteriormente no somos capaces de comunicar nuestros resultados con los demás.
+
 
 ## Udemy
 
@@ -88,7 +93,7 @@ El siguiente curso dipone una página web para el libro, puedes acceder a esta p
 
 Para comentarios y erratas, envía un correo electrónico a <a href="mailto:ciencia.datos.con.r@gmail.com" target="_blank"><img src="https://i.imgur.com/PJGlEba.png"></a>.
 
-__Sigueme en:__
+__Sígueme en:__
 
 <a href="https://plus.google.com/+RubénSánchezSancho?hl=es" target="_blank"><img src="https://i.imgur.com/nFk0c7l.png"></a>
 <a href="https://www.linkedin.com/in/ruben-sanchez-sancho-767993139/" target="_blank"><img src="https://i.imgur.com/ccAeFjJ.png"></a>
