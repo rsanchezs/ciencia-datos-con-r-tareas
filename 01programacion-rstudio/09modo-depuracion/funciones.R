@@ -25,6 +25,8 @@ varianza <- function(x) {
 }
 
 
+#Calculamos la varianza
+varianza(1:10)
 
 
 
