@@ -3,7 +3,6 @@
   
   go <<- function() {
     source(".init.R")
-    file.edit("instrucciones.Rmd")
     rmarkdown::render("instrucciones.Rmd", encoding = "UTF-8")
     myViewer <- getOption("viewer")
     file.copy("instrucciones.html", file.path(tempdir(), "instrucciones.html"))
