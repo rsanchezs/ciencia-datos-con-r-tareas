@@ -8,6 +8,7 @@
     myViewer <- getOption("viewer")
     file.copy("instrucciones.html", file.path(tempdir(), "instrucciones.html"))
     myViewer(file.path(tempdir(), "instrucciones.html"))
+    cat("\014")
   }
   
 }

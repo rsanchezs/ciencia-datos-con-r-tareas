@@ -48,7 +48,7 @@ Crea un vector de tipo númerico con los valores 3, 12, 13, 4, 6:
 
 ```{r eval=FALSE}
 # Creación del vector
-vector <- c(3, 12, 13, 4, 6)
+v <- c(3, 12, 13, 4, 6)
 ```
 </div>
 
@@ -60,7 +60,7 @@ vector <- c(3, 12, 13, 4, 6)
 
 Calcula la suma de los valores del vector con la función `sum()`:
 ```{r eval=FALSE}
-sum(vector)
+sum(v)
 ```
 </div>
 
@@ -70,7 +70,7 @@ sum(vector)
 **Ejercicio:**
 Calcula la media del vector con la función `mean()`:
 ```{r eval=FALSE}
-mean(vector)
+mean(v)
 ```
 </div>
 
