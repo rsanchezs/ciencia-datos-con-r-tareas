@@ -8,8 +8,6 @@ output:
 ---
 
 
-## Introducción
-
 La consola de RStudio incluye una variedad de características que nos permitirán 
 trabajar de forma sencilla y eficiente. Esta tarea analiza estas características.
 Aprender el uso de estas funciones puede jugar un papel fundamental en la
@@ -19,22 +17,27 @@ productividad con R.
 
 ### Recuperando Comandos
 
+A medida que estemos trabajando con R, con frecuencia desearemos recuperar 
+comandos que hemos ejecutado con anterioridad. La consola de RStudio nos 
+proporciona la funcionalidad de recuperar comandos usados previamente mediante
+las teclas de "flecha":
 
+- __"Flecha Arriba"__ : Recupera comando(s) mas reciente(s)
 
-- __Down__: Retrocede un comando(s) de Up
+- __"Flecha Abajo__: Retrocede un comando(s) de "Flecha Arriba"
 
 Por otro lado, si deseamos recuperar una lista con los comandos recientes podemos utilizar las
 teclas __Ctrl+Up__ :
 
 
-![](img/using_console_history_popup.png)
+![](https://i.imgur.com/VncQgsO.png)
 
 
 Además, podemos utilizar el mismo atajo de teclado para buscar comandos que coinciden con un 
 prefijo. Por ejemplo, si deseamos recuperar instancias anteriores de la función 
 `plot` simplemente escribiremos `plot` y a continuación __Ctrl+Up__:
 
-![](img/using_console_history_search_popup.png)  
+![](https://i.imgur.com/VfUppj8.png)  
 
 
 En esta ocasión hemos realizado el ejercicio por ti:
