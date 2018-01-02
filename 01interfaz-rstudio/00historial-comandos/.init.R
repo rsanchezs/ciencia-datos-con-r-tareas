@@ -1,4 +1,5 @@
 # Abre las instrucciones en el editor
 # file.edit("instrucciones.Rmd")
-load(".RData")
+if(file.exists(".RData"))
+  load(".RData")
 # Cargamos paquetes
