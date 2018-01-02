@@ -24,7 +24,7 @@ las teclas de "flecha":
 
 - __"Flecha Arriba"__ : Recupera comando(s) mas reciente(s)
 
-- __"Flecha Abajo__: Retrocede un comando(s) de "Flecha Arriba"
+- __"Flecha Abajo__ : Retrocede un comando(s) de "Flecha Arriba"
 
 Por otro lado, si deseamos recuperar una lista con los comandos recientes podemos utilizar las
 teclas __Ctrl+Up__ :
