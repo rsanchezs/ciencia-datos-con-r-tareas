@@ -1,0 +1,81 @@
+---
+title: "Panel del Editor"
+output:
+  html_document: 
+    encoding: UTF-8
+    theme: cerulean
+    css: custom.css
+---
+
+
+## Ejecución de Código
+
+El IDE RStudio soporta la ejecución de código desde el editor (los comandos
+ejecutados son pasados a la consola dónde su resultado también aparece).
+
+### Ejecución de una Línea
+
+Para ejecutar una línea de código fuente dónde el cursor está situado es ese 
+momento podemos utilizar la combinación de teclas __Ctrl + Enter__ (o mediante
+el botón __Run__ de la barra de tareas):
+
+![](https://i.imgur.com/QIgLyl3.png)
+
+Después de ejecutar la línea de código, RStudio automáticamente avanza el cursor
+a la siguiente línea. Esto nos permite ejecutar nuestro archivo fuente línea a
+línea.
+
+### Ejecución de Múltiples Líneas
+
+Existen tres formas de ejecutar múltiples líneas desde el editor:
+
+- Seleccionando las líneas y utilizando el atajo de teclado __Ctrl + Enter__ (o
+mediante el botón __Run__ de la barra de tareas).
+- Después de ejecutar una selección de código, usar __Re Run Previous Region__ con
+el atajo de teclado __Ctrl + Shift + P__ (o su botón asociado en la barra de tareas).
+Esto es útil si hemos realizado algún cambio en nuestro código y deseamos comprobar
+los resultados.
+- Ejecutar el documento entero mediante __Ctrl + Shift + Enter__ (o mediante el 
+botón __Source__ de la barra de tareas).
+
+</br>
+
+
+<div class="alert alert-info" role="alert">
+<span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+<span class="sr-only">Exercise:</span>
+**Ejercicio:**</br>
+En el editor encontrarás abierto el script `mi-primer-script.R`. Utiliza lo que
+has aprendido para ejecutar el código.
+</div>
+
+</br>
+
+<div class="alert alert-warning" role="alert">
+<span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+<span class="sr-only">Question:</span>
+**Pregunta:**
+¿Qué código de especie aparece en primer lugar?
+
+**Posibles respuestas:**
+<p><span class="glyphicon glyphicon-check" aria-hidden="true">  87</span></p>
+<p><span class="glyphicon glyphicon-check" aria-hidden="true">  81</span></p>
+<p><span class="glyphicon glyphicon-check" aria-hidden="true">  232</span></p>
+<p><span class="glyphicon glyphicon-check" aria-hidden="true">  80</span></p>
+</div>
+
+</br>
+
+<p>
+<a class="btn btn-primary" data-toggle="collapse" href="#hint" aria-expanded="false" aria-controls="collapseExample">
+<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true">     Pista</span></a>
+</p>
+<div class="collapse" id="hint">
+<div class="card card-block">
+<div class="alert alert-info" role="alert">
+Prueba cada una de las opciones presentadas en la tarea para ejecutar el código 
+la cónsola.
+</div>
+</div>
+
+

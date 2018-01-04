@@ -1,0 +1,42 @@
+---
+title: "Obtener el Directorio de Trabajo"
+output:
+  html_document: 
+    encoding: UTF-8
+    theme: cerulean
+    css: custom.css
+---
+
+En la tarea anterior hemos visto que con la ayuda de la función `setwd()` podemos
+establecer nuestrod directorio de trabajo.
+
+Por otro lado, podemos obtener nuestro directorio de trabajo ejecutando `getwd()`
+en la consola.
+
+
+<div class="alert alert-warning" role="alert">
+<span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+<span class="sr-only">Question:</span>
+**Pregunta:**</br>
+Después de ejecutar `getwd()`en la consola, ¿Cuál de los siguientes directorios
+es el directorio de trabajo?
+**Posibles respuestas:**
+<p><span class="glyphicon glyphicon-check" aria-hidden="true">  `dir1`</span></p>
+<p><span class="glyphicon glyphicon-check" aria-hidden="true">  `dir2`</span></p>
+<p><span class="glyphicon glyphicon-check" aria-hidden="true">  `dir3`</span></p>
+<p><span class="glyphicon glyphicon-check" aria-hidden="true">  `dir4`</span></p>
+</div>
+
+</br>
+
+<p>
+<a class="btn btn-primary" data-toggle="collapse" href="#hint" aria-expanded="false" aria-controls="collapseExample">
+<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true">     Pista</span></a>
+</p>
+<div class="collapse" id="hint">
+<div class="card card-block">
+<div class="alert alert-info" role="alert">
+Simplemente ejecuta `getwd()`en la consola. ¿Cúal es la salida?
+</div>
+
+

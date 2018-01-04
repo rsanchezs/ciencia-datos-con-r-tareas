@@ -1,5 +1,5 @@
 ---
-title: "Historial de Comandos"
+title: "Atajos de Teclado"
 output:
   html_document: 
     encoding: UTF-8
@@ -15,7 +15,7 @@ productividad con R.
 
 
 
-### Recuperando Comandos
+### Historial de Comandos
 
 A medida que estemos trabajando con R, con frecuencia desearemos recuperar 
 comandos que hemos ejecutado con anterioridad. La consola de RStudio nos 
