@@ -8,7 +8,7 @@ output:
 ---
 
 En la tarea anterior hemos visto que con la ayuda de la función `setwd()` podemos
-establecer nuestrod directorio de trabajo.
+establecer nuestro directorio de trabajo.
 
 Por otro lado, podemos obtener nuestro directorio de trabajo ejecutando `getwd()`
 en la consola.
