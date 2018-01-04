@@ -3,7 +3,8 @@ title: "Obtener el Directorio de Trabajo"
 output:
   html_document: 
     encoding: UTF-8
-    theme: cerulean
+    theme: flatly
+    highlight: tango
     css: custom.css
 ---
 
@@ -17,10 +18,10 @@ en la consola.
 <div class="alert alert-warning" role="alert">
 <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
 <span class="sr-only">Question:</span>
-**Pregunta:**</br>
+**Pregunta:**</br></br>
 Después de ejecutar `getwd()`en la consola, ¿Cuál de los siguientes directorios
-es el directorio de trabajo?
-**Posibles respuestas:**
+es el directorio de trabajo?</br></br>
+**Posibles respuestas:**</br>
 <p><span class="glyphicon glyphicon-check" aria-hidden="true">  `dir1`</span></p>
 <p><span class="glyphicon glyphicon-check" aria-hidden="true">  `dir2`</span></p>
 <p><span class="glyphicon glyphicon-check" aria-hidden="true">  `dir3`</span></p>
@@ -30,7 +31,7 @@ es el directorio de trabajo?
 </br>
 
 <p>
-<a class="btn btn-primary" data-toggle="collapse" href="#hint" aria-expanded="false" aria-controls="collapseExample">
+<a class="btn btn-info" data-toggle="collapse" href="#hint" aria-expanded="false" aria-controls="collapseExample">
 <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true">     Pista</span></a>
 </p>
 <div class="collapse" id="hint">

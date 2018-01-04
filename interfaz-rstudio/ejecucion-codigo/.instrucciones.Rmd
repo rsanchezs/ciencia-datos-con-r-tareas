@@ -3,7 +3,8 @@ title: "Panel del Editor"
 output:
   html_document: 
     encoding: UTF-8
-    theme: cerulean
+    theme: flatly
+    highlight: tango
     css: custom.css
 ---
 
@@ -67,7 +68,7 @@ has aprendido para ejecutar el código.
 </br>
 
 <p>
-<a class="btn btn-primary" data-toggle="collapse" href="#hint" aria-expanded="false" aria-controls="collapseExample">
+<a class="btn btn-info" data-toggle="collapse" href="#hint" aria-expanded="false" aria-controls="collapse">
 <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true">     Pista</span></a>
 </p>
 <div class="collapse" id="hint">
