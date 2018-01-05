@@ -1,0 +1,72 @@
+---
+title: "Atajos de Teclado"
+output:
+  html_document: 
+    encoding: UTF-8
+    theme: flatly
+    highlight: tango
+    css: custom.css
+---
+
+
+### Uso de la tecla __TAB__
+
+
+RStudio nos proporciona el autocompletado de código por medio del uso de la tecla
+__TAB__. Por ejemplo, si disponemos de un objeto de nombre `pollResults` en 
+nuestro espacio de trabajo podemos introducir `poll` en la consola y presionar la 
+tecla __Tab__. Esto hará que RStudio complete automáticamente el nombre del del 
+objeto.
+
+Además, la característica de autocompletado nos proporciona ayuda para funciones.
+Por ejmplo, si escribimos `sub` y a continuación presionamos la tecla __Tab__ se
+nos mostrará una ventana emergente con la funciones disponibles en el entorno que
+empiezan con el prefijo `sub`:
+
+![](https://i.imgur.com/bXO48Xf.png)
+
+Por último, el autocompletado de código también trabaja para los argumentos. Por
+ejemplo, si escribimos en la consola `subset` y presionamos la tecla _Tab_ nos
+aparecerá una lista con los argumentos disponibles para la función:
+
+![](https://i.imgur.com/XWLpksS.png)
+
+
+<div class="alert alert-success" role="alert">
+<span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+<span class="sr-only">Exercise:</span>
+**Ejercicio:**</br></br>
+- Escribe `read.csv(` en la consola.</br>
+- Presiona la tecla __TAB__. RStudio de forma automática cerrará el paréntesis por
+nosotros, pero el cursor es necesario que se encuentre situado entre los dos 
+paréntesis para que el autocompletado funcione.
+</div>
+
+
+<div class="alert alert-warning" role="alert">
+<span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+<span class="sr-only">Question:</span>
+**Pregunta:**
+¿Cúal de los siguientes argumentos no pertenece a la función `read.csv()`?
+
+**Posibles respuestas:**
+<p><span class="glyphicon glyphicon-check" aria-hidden="true">  file</span></p>
+<p><span class="glyphicon glyphicon-check" aria-hidden="true">  fill</span></p>
+<p><span class="glyphicon glyphicon-check" aria-hidden="true">  header</span></p>
+<p><span class="glyphicon glyphicon-check" aria-hidden="true">  xlab</span></p>
+</div>
+
+<p>
+<a class="btn btn-primary" data-toggle="collapse" href="#hint" aria-expanded="false" aria-controls="collapseExample">
+<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true">     Pista</span></a>
+</p>
+<div class="collapse" id="hint">
+<div class="card card-block">
+<div class="alert alert-info" role="alert">
+Presiona la tecla __TAB__ mientras el cursor esta situado entre los paréntesis. 
+A continuación, se te desplegará una lista por la que puedes navegar con la ayuda
+de las flechas del teclado para buscar los argumentos disponibles de la función
+</div>
+</div>
+
+

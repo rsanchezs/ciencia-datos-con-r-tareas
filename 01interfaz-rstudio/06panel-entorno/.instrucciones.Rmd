@@ -1,0 +1,66 @@
+---
+title: "Panel del Entorno"
+output:
+  html_document: 
+    encoding: UTF-8
+    theme: flatly
+    highlight: tango
+    css: custom.css
+---
+
+
+El panel del __Entorno__ es una de mayores ventajas de RStudio. Este panel nos 
+proporciona una vista con los objetos disponibles en un entorno. Es decir, podemos
+ver una lista de todos los datos, valores y funciones.
+
+Si hacemos clic en la flecha azul o blanca al princio del nombre de un objeto,
+podemos ver su estructura. Esto es básicamente la salida de la función `str()`.
+
+![](https://i.imgur.com/iydOUfJ.png)
+
+El navegador del __Entorno__ nos muestra el número de observaciones y el número de
+variables en la segunda columa. Si deseamos ver un dataset en formato de hoja de
+cálculo en el visualizador de datos podemos hacer clic en el botón "tabla" al final
+de la línea.
+
+![](https://i.imgur.com/8QS8Ui4.png)
+
+
+
+
+<div class="alert alert-info" role="alert">
+<span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+<span class="sr-only">Exercise:</span>
+**Ejercicio:**</br>
+1. Ejecuta el código del script `mi_codigo.R` como ya hemos visto anteriormente.
+</div>
+
+</br>
+
+<div class="alert alert-warning" role="alert">
+<span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+<span class="sr-only">Question:</span>
+**Pregunta:**
+¿Cuantos _valores_ aparecen el el panel del __Entorno__?
+
+**Posibles respuestas:**
+<p><span class="glyphicon glyphicon-check" aria-hidden="true">  1</span></p>
+<p><span class="glyphicon glyphicon-check" aria-hidden="true">  3</span></p>
+<p><span class="glyphicon glyphicon-check" aria-hidden="true">  5</span></p>
+<p><span class="glyphicon glyphicon-check" aria-hidden="true">  6</span></p>
+</div>
+
+</br>
+
+<p>
+<a class="btn btn-primary" data-toggle="collapse" href="#hint" aria-expanded="false" aria-controls="collapseExample">
+<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true">     Pista</span></a>
+</p>
+<div class="collapse" id="hint">
+<div class="card card-block">
+<div class="alert alert-info" role="alert">
+Hecha un vistazo en la penstaña del entorno después de ejecutar `mi_codigo.R`. 
+Observa que la pestaña separa los _valores_ y las _funciones_.
+</div>
+
+

@@ -1,0 +1,48 @@
+---
+title: "Establecer Directorio de Trabajo"
+output:
+  html_document: 
+    encoding: UTF-8
+    theme: flatly
+    highlight: tango
+    css: custom.css
+---
+
+
+
+Podemos establecer nuestro directorio de trabajo desde el panel de Archivos, desde
+el cual podemos navegar y seleccionar el directorio. A continuación, podemos 
+establecer el directorio de trabajo haciendo clic en `More > Set As Working Directory`. 
+
+
+![](https://i.imgur.com/JLcFMRh.png)
+
+
+<div class="alert alert-warning" role="alert">
+<span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+<span class="sr-only">Question:</span>
+**Pregunta:**</br>
+También podemos establecer nuestro directorio de trabajo mediante una función.
+¿A que función nos estamos refiriendo?
+
+**Posibles respuestas:**
+<p><span class="glyphicon glyphicon-check" aria-hidden="true">  `setupwd()`</span></p>
+<p><span class="glyphicon glyphicon-check" aria-hidden="true">  `workingdirectory()`</span></p>
+<p><span class="glyphicon glyphicon-check" aria-hidden="true">  `setworkingdirectory()`</span></p>
+<p><span class="glyphicon glyphicon-check" aria-hidden="true">  `setwd()`</span></p>
+</div>
+
+</br>
+
+<p>
+<a class="btn btn-primary" data-toggle="collapse" href="#hint" aria-expanded="false" aria-controls="collapseExample">
+<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true">     Pista</span></a>
+</p>
+<div class="collapse" id="hint">
+<div class="card card-block">
+<div class="alert alert-info" role="alert">
+Prueba cada una de las opciones en la consola o visualiza de nuevo el video para 
+determinar la respuesta correcta.
+</div>
+
+
