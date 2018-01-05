@@ -15,3 +15,5 @@
 
 # Modulo
 
+
+# Calcula el coseno de un ángulo de 120º

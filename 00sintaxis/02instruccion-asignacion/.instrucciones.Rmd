@@ -16,7 +16,7 @@ knitr::opts_chunk$set(echo = TRUE, prompt = FALSE, comment = "", collapse = TRUE
 
 ## 
 
-En el símbolo del sistema de R escribimos las expresiones. El símbolo `<-` es el
+En el símbolo del sistema de R (el símbol __`>`__ en la consola) escribimos las expresiones. El símbolo `<-` es el
 __operador de asignación__:
 
 ```{r}
@@ -63,8 +63,17 @@ x <- 5
 print(x) ## impresión explícita
 ```
 
+
+<div class="alert alert-info" role="alert">
+<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+<span class="sr-only">Info:</span>
+__Observa que:__</br>
 El [1] que se muestra en la salida indica que `x`es un vector y 5 su primer
 elemento.
+</div>
+
+
+
 
 En un trabajo interactivo en la Consola de R, no utilizaremos la función `print()`
 para imprimir explícitamente los objetos por pantalla, puesto que es mucho más fácil
@@ -84,10 +93,16 @@ x <- 10:50
 x
 ```
 
+<div class="alert alert-info" role="alert">
+<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+<span class="sr-only">Info:</span>
+**Recuerda:**</br>
 
-__Observemos__ que los números entre los corchetes no son parte del vector, sino
-que forma parte de la impresión por pantalla. El operador `:` es usado para crear
+Los números entre los corchetes no son parte del vector, sino
+que forma parte de la impresión por pantalla. El operador __`:`__ es usado para crear
 secuencias de enteros.
+
+</div>
 
 </br></br>
 

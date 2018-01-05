@@ -1,0 +1,257 @@
+---
+output:
+  html_document: 
+    encoding: UTF-8
+    theme: flatly
+    highlight: tango 
+    css: custom.css
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, prompt = FALSE, comment = "", collapse = TRUE)
+```
+
+# Datos Básicos en R
+
+R proporciona cuatro tipos básicos de datos, también conocidos como vectores atómicos.
+
+- logical
+- numeric 
+- integer
+- character
+
+### Logical {#logical}
+
+El tipo _logical_ es la forma que tiene R para los datos binarios. Usados en test lógicos son conocidos como valores boleanos y toman los valores **TRUE** y **FALSE**. TRUE y FALSE pueden ser abreviados con las T y F en mayúsculas respectivamente. Sin embargo, recomendamos utilizar la versión completa de TRUE y FALSE. 
+
+
+```{r}
+3 < 4
+```
+
+```{r}
+class(TRUE)
+```
+
+
+```{r}
+class(T)
+```
+
+
+
+
+
+
+### Numeric {#numeric}
+
+Para representar los números reales R proporciona el tipo _numeric_. Podemos realizar toda clase de operaciones con ellos como por ejemplo sumas, restas, multiplicaciones, divisiones y utilizarlos en el amplio catálogo de funciones matemáticas con las que cuenta R:
+
+
+```{r}
+mi_altura_en_cm <- 180
+mi_altura_en_cm
+```
+
+
+```{r}
+mi_peso <- 79.5
+mi_peso
+```
+
+
+```{r}
+IMC <- mi_peso / mi_altura_en_cm ^ 2
+IMC
+```
+
+
+```{r}
+round(mi_peso)
+```
+
+### Integer {#integer}
+
+Un tipo especial de numeric es el _integer_. Este es el modo de representar los números enteros en R. Para especificar que un número es entero, debemos añadir la letra L en mayúscula como sufijo.
+
+
+```{r}
+mi_edad <- 40L
+mi_edad
+```
+
+En el ejemplo anterior, no podemos apreciar la diferencia entre el número real y el número entero.Sin embargo, con la función `class()` podemos comprobar esta diferencia:
+
+
+
+```{r}
+class(40)
+```
+
+
+```{r}
+class(40L)
+```
+
+En lugar de preguntar por la clase de una variable mediante la función `class()`, podemos utilizar las funciones `is.*()` para comprobar si un objeto es realmente de un cierto tipo. Por ejemplo, para comprobar si una variable es numeric, usaremos la función `is.numeric()`:
+
+
+```{r}
+is.numeric(40)
+```
+
+
+```{r}
+is.numeric(40L)
+```
+
+Para comprobar si una variable es integer, usaremos la función `is.integer()`:
+
+
+```{r}
+is.integer(40)
+```
+
+
+```{r}
+is.integer(40L)
+```
+
+Como podemos ver en el ejemplo anterior los números reales son numeric, pero no todos los numeric son enteros.
+
+<div class="alert alert-info" role="alert">
+<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+<span class="sr-only">Info:</span>
+**Recuerda:**</br>
+Como podemos ver en el ejemplo anterior los números reales son numeric, pero no todos los numeric son enteros.
+</div>
+
+
+### Character {#character}
+
+Cualquier dato alfanumérico (o cadenas, _strings_ en inglés; todo aquello que no sea un número es una cadena) será
+interpretado por R como _character_. Por ejemplo:
+
+
+```{r}
+"Ciencia de Datos con R"
+```
+
+</br>
+</br>
+</br>
+
+<div class="alert alert-success" role="alert">
+<span class="glyphicon glyphicon-education" aria-hidden="true"></span>
+<span class="sr-only">Instructions:</span>
+**Ejercicio:**</br>
+Con los conocimientos adquiridos, sigue las instrucciones que encontrarás a 
+continuación para completar el ejercicio en el archivo __script.R__ que encontrarás
+abierto en el editor.
+</div>
+
+<div class="panel panel-success">
+ <div class="panel-body">
+ 
+ <div class="alert alert-success" role="alert">
+<span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>
+<span class="sr-only">Instructions:</span>
+**Instrucciones:**  
+
+- Cambia el valor de __`numerico`__ a 42 y comprueba a la _clase_ que pertenece y su _tipo_.
+</div>
+
+
+<div class="alert alert-success" role="alert">
+<span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>
+<span class="sr-only">Instructions:</span>
+**Instrucciones:**  
+
+- Cambia el valor de __`caracter`__ por __"Ciencia de Datos con R"__.  __Observa que__  los paréntesis indican que se trata de un valor de tipo __`character`__.
+- Comprueba a la _clase_ que pertenece y su _tipo_.
+</div>
+
+<div class="alert alert-success" role="alert">
+<span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>
+<span class="sr-only">Instructions:</span>
+**Instrucciones:**
+
+- Cambia __`logico`__ a __`FALSE`__ y comprueba su _clase_ y _tipo_.
+</div>
+
+
+
+<div class="alert alert-success" role="alert">
+<span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>
+<span class="sr-only">Instructions:</span>
+**Instrucciones:**  
+
+- Cambia el valor de la variable __`numerico`__ para que sea un número entero.
+- Comprueba a la _clase_ que pertenece y su _tipo_.
+</div>
+
+<div class="alert alert-success" role="alert">
+<span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>
+<span class="sr-only">Instructions:</span>
+**Instrucciones:**  
+
+- Selecciona el código del script mediante __CRTL + A__ y ejecútalo en la consola
+con la combinación de las teclas __CTRL + ENTER__
+</div>
+
+
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+
+
+
+
+
+<div class="alert alert-warning" role="alert">
+<span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+<span class="sr-only">Question:</span>
+**Pregunta 1:**  
+
+¿Cómo harías para que la variable __`numerico`__ sea de
+tipo entero?
+</div>
+
+
+<div class="alert alert-warning" role="alert">
+<span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+<span class="sr-only">Question:</span>
+**Pregunta 2:**  
+
+¿Qué función utilizarías para comprobar que un objeto pertenece al tipo __`integer`__ ?
+</div>
+
+
+<p>
+<a class="btn btn-info" data-toggle="collapse" href="#hint" aria-expanded="false" aria-controls="collapseExample">
+<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true">      __Ayuda__</span></a>
+</p>
+<div class="collapse" id="hint">
+<div class="card card-block">
+<div class="alert alert-info" role="alert">
+Escribe en la consola __`submit()`__ para que se abra en
+el editor un script con la solución a la tarea.
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
