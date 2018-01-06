@@ -2,4 +2,7 @@
 if(file.exists(".RData"))
   load(".RData")
 # Abre el script en el editor
-file.edit("script.R")
+if(file.exits("script.R")){
+  Sys.chmod("script.R", mode = "0444")
+  file.edit("script.R") 
+}

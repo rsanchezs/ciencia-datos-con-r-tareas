@@ -1,0 +1,160 @@
+---
+output:
+  html_document: 
+    encoding: UTF-8
+    theme: flatly
+    highlight: tango 
+    css: custom.css
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, prompt = FALSE, comment = "", collapse = TRUE)
+```
+
+## Funciones para Comprobar el tipo
+
+En ocasiones queremos realizar diferentes cosas basadas en el tipo de vector. Una 
+opción es usar la función `typeof()`. Otra es usar las funciones que realizan la
+comprobación de tipo y devuelven `TRUE` o `FALSE`, como `is.character()`, `is.double()`, 
+`is.integer()`, `is.logical()` o, de forma más general mediante `is.atomic()`:
+
+```{r collapse=TRUE}
+vector_integer <- c(1L, 2L, 3L)
+typeof(vector_integer)
+is.integer(vector_integer)
+is.atomic(vector_integer)
+```
+
+
+```{r collapse= TRUE}
+vector_double <- c(1, 2.5, 4.5)
+typeof(vector_double)
+is.double(vector_double)
+is.atomic(vector_double)
+```
+
+
+Es importante subrayar que la función `is.numeric()` comprueba si un objeto es de
+tipo numeric y devuelve `TRUE` tanto para vectores de tipo integer como de tipo 
+double. 
+
+```{r collapse=TRUE}
+is.numeric(vector_integer)
+is.numeric(vector_double)
+```
+
+
+En la siguiente tabla resumimos las funciones para comprobar el tipo de nuestros
+vectores:
+
+|  | logical | integer | double | character | 
+| :--- | :---: | :---: | :---: | :---: | 
+| **is.logical\(\)** | X |  |  |  |  
+| **is.integer\(\)** |  | X |  |  |  
+| **is.double\(\)** |  |  | X |  |  
+| **is.numeric\(\)** |  | X | X |  |  
+| **is.character\(\)** |  |  |  | X |  
+| **is.atomic\(\)** | X | X | X | X |  
+| **is.vector\(\)** | X | X | X | X | 
+
+
+
+</br>
+</br>
+
+<div class="alert alert-success" role="alert">
+<span class="glyphicon glyphicon-education" aria-hidden="true"></span>
+<span class="sr-only">Instructions:</span>
+**Ejercicio:**</br>
+Con los conocimientos adquiridos, sigue las instrucciones que encontrarás a 
+continuación para completar el ejercicio en el archivo __script.R__ que encontrarás
+abierto en el editor.
+</div>
+
+<div class="panel panel-success">
+ <div class="panel-body">
+ 
+ <div class="alert alert-success" role="alert">
+<span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>
+<span class="sr-only">Instructions:</span>
+**Instrucciones:**  
+
+- Define un vector real con los siguientes números: 3.2, 4, 6.3, 7.
+</div>
+
+
+<div class="alert alert-success" role="alert">
+<span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>
+<span class="sr-only">Instructions:</span>
+**Instrucciones:** 
+
+- Define un vector de enteros con los siguientes números: 3, 4, 6, 7.</br>
+**Recuerda** añadir el sufijo __L__ a los números para que R interprete que se
+tratan de números enteros.
+
+</div>
+
+<div class="alert alert-success" role="alert">
+<span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>
+<span class="sr-only">Instructions:</span>
+**Instrucciones:**  
+
+- Comprueba si los vectores son de tipo __`atomic`__.
+</div>
+
+<div class="alert alert-success" role="alert">
+<span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>
+<span class="sr-only">Instructions:</span>
+**Instrucciones:**  
+
+- Comprueba si los vectores son de tipo __`numeric`__.
+</div>
+
+<div class="alert alert-success" role="alert">
+<span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>
+<span class="sr-only">Instructions:</span>
+**Instrucciones:**  
+
+- Comprueba si los vectores son de tipo __`integer`__.
+</div>
+
+<div class="alert alert-warning" role="alert">
+<span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+<span class="sr-only">Question:</span>
+**Pregunta 1:**  
+¿Qué devuelve la función __`is.numeric()`__ para ambos vectores?
+</div>
+
+
+<div class="alert alert-warning" role="alert">
+<span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+<span class="sr-only">Question:</span>
+**Pregunta 2:**  
+
+¿Qué función utilizarías para comprobar que un vector pertenece al tipo __`integer`__?
+</div>
+
+
+<p>
+<a class="btn btn-info" data-toggle="collapse" href="#hint" aria-expanded="false" aria-controls="collapseExample">
+<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true">      __Ayuda__</span></a>
+</p>
+<div class="collapse" id="hint">
+<div class="card card-block">
+<div class="alert alert-info" role="alert">
+Escribe en la consola __`check()`__ para que se abra en
+el editor un script con la solución a la tarea.
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
