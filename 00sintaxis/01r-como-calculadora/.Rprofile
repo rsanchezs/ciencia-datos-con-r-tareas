@@ -22,7 +22,11 @@
 }
 
 .Last <- function() {
-  system("cd /home/rsanchezs/ciencia-datos-con-r/ciencia-datos-con-r-tareas/.git")
-  system("git reset --hard")
-  system("git clean -fd")
+  
+  revert <<- function() {
+    system("cd /home/rsanchezs/ciencia-datos-con-r/ciencia-datos-con-r-tareas/.git")
+    system("git reset --hard")
+    system("git clean -fd")
+  }
+  
 }
