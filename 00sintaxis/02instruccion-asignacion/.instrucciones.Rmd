@@ -16,7 +16,7 @@ knitr::opts_chunk$set(echo = TRUE, prompt = FALSE, comment = "", collapse = TRUE
 
 ## 
 
-En el símbolo del sistema de R (el símbol __`>`__ en la consola) escribimos las expresiones. El símbolo `<-` es el
+En el símbolo del sistema de R escribimos las expresiones. El símbolo `<-` es el
 __operador de asignación__:
 
 ```{r}

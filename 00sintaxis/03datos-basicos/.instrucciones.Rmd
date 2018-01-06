@@ -238,7 +238,7 @@ tipo entero?
 <div class="collapse" id="hint">
 <div class="card card-block">
 <div class="alert alert-info" role="alert">
-Escribe en la consola __`submit()`__ para que se abra en
+Escribe en la consola __`check()`__ para que se abra en
 el editor un script con la solución a la tarea.
 </div>
 </div>
