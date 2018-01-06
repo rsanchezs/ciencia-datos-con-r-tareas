@@ -15,9 +15,7 @@
     
     if(file.exists(".Rhistory"))
       loadhistory(".Rhistory")
-    
-    Sys.umask(mode="0002")
-    
+  
     cat("\014")
     
   }
