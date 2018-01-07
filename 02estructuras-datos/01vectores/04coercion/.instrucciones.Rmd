@@ -1,0 +1,117 @@
+---
+output:
+  html_document: 
+    encoding: UTF-8
+    theme: flatly
+    highlight: tango 
+    css: custom.css
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, prompt = FALSE, comment = "", collapse = TRUE)
+```
+
+
+## Coerción 
+
+Todos los __elementos de un vector deben ser del mismo tipo__, así pues cuando intentemos
+combinar diferentes tipos estos serán convertidos al tipo más flexible. El orden es el
+siguiente:
+
+![](https://i.imgur.com/QrmSoIc.png)    
+    
+Por ejemplo, mezclar un character y un integer producirá un character:
+
+```{r collapse=TRUE}
+v <- c("a", 1L)
+v
+typeof(v)
+class(v)
+
+```
+
+
+Cuando un vector lógico es convertido a un integer o double, `TRUE` es cambiado a
+1 y `FALSE` a 0:
+
+```{r collapse=TRUE}
+v <- c(FALSE, FALSE, FALSE)
+as.numeric(v)
+```
+
+<div class="alert alert-info" role="alert">
+<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+<span class="sr-only">Info:</span>
+**Recuerda:**</br>
+
+- La coerción sucede normalmente de forma automática. La mayoría de funciones matemáticas
+(`+`, `log`, `abs`, etc.) convierten a los tipos double o integer, y la mayoría de 
+operaciones lógicas (`&`, `|`, `any`, etc.) cambian al tipo logical. Si el cambio de un
+tipo en otro pierde información, R nos lo advertirá mediante un mensaje. 
+- La familia de las funciones __`as.*()`__ permiten convertir un tipo de objeto en otro.
+
+</div>
+
+
+
+</br>
+</br>
+
+
+</div>
+<div class="panel panel-success">
+ <div class="panel-body">
+ <div class="alert alert-success" role="alert">
+<span class="glyphicon glyphicon-education" aria-hidden="true"></span>
+<span class="sr-only">Instructions:</span>
+**Ejercicio:**</br>
+Con los conocimientos adquiridos, descubre el tipo de datos al que pertenecen
+las siguientes instrucciones:
+
+```{r eval=FALSE}
+c(5, "dos")
+```
+
+```{r eval=FALSE}
+c(TRUE, "a")
+```
+
+```{r eval=FALSE}
+c(1, "TRUE")
+```
+
+
+</div>
+ </div>
+</div>
+
+
+<div class="alert alert-warning" role="alert">
+<span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+<span class="sr-only">Question:</span>
+**Pregunta 1:**  
+¿Qué devuelve la siguiente instrucción __`TRUE + 1`__? Sabrías explicar porqué
+R se comporta de este modo.
+</div>
+
+
+<div class="alert alert-warning" role="alert">
+<span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+<span class="sr-only">Question:</span>
+**Pregunta 2:**  
+¿Qué devuelve la siguiente instrucción __`TRUE + FALSE__`? Sabrías explicar porqué
+R se comporta de este modo.
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
