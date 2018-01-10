@@ -1,3 +1,5 @@
 .Rproj.user
 .Ruserdata
 *.html
+.Rprofile
+.init.R
