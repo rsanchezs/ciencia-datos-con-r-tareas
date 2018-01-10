@@ -98,9 +98,9 @@ x
 <span class="sr-only">Info:</span>
 **Recuerda:**</br>
 
-Los números entre los corchetes no son parte del vector, sino
-que forma parte de la impresión por pantalla. El operador __`:`__ es usado para crear
-secuencias de enteros.
+- Los números entre los corchetes no son parte del vector, sino
+que forma parte de la impresión por pantalla. 
+- El operador __`:`__ es usado para crear secuencias de enteros.
 
 </div>
 
