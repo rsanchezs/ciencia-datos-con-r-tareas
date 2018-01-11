@@ -5,7 +5,22 @@ output:
     encoding: UTF-8
     theme: flatly
     highlight: tango 
-    css: /home/rsanchezs/ciencia-datos-con-r/custom.css
+    css: custom.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, prompt = FALSE, comment = "", collapse = TRUE)
+```
+
+
+---
+title: "R una Calculadora Científica"
+output:
+  html_document:
+    encoding: UTF-8
+    theme: flatly
+    highlight: tango
+    css:  ~/custom.css
 ---
 
 ```{r setup, include=FALSE}

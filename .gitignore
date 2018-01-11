@@ -2,4 +2,4 @@
 .Ruserdata
 *.html
 .Rprofile
-.init.R
+custom.css
