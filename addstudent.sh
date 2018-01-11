@@ -1,8 +1,9 @@
 #!/bin/bash
-# Script para creacion nuevos alumnos
+# Script to add a student to the Course
+
 if [ $(id -u) -eq 0 ]; then
-	read -p "Nombre alumno : " username
-	read -s -p "Contraseña: : " password
+	read -p "Student : " username
+	read -s -p "Password: : " password
 	egrep "^$username" /etc/passwd >/dev/null
 	if [ $? -eq 0 ]; then
 		echo "$username ya existe!"
@@ -12,14 +13,17 @@ if [ $(id -u) -eq 0 ]; then
 		useradd -m -p $pass $username
 		sudo usermod -a -G alumnos $username
 		mkdir -v /home/$username/ciencia-datos-con-r
+		chown -R $username:alumnos /home/$username/ciencia-datos-con-r
 		cd /home/$username/ciencia-datos-con-r/
 		git clone --verbose  https://github.com/rsanchezs/ciencia-datos-con-r-tareas.git
-		echo "home/$username/ciencia-datos-con-r/ciencia-datos-con-r-tareas/.git" >> repos.txt
+		echo "home/$username/ciencia-datos-con-r/ciencia-datos-con-r-tareas/.git" >> /home/rsanchezs/repos.txt
 		git clone --verbose  https://github.com/rsanchezs/ciencia-datos-con-r-casos-estudio.git
-		echo "home/$username/ciencia-datos-con-r/ciencia-datos-con-r-casos-estudio/.git" >> repos.txt
-		[ $? -eq 0 ] && echo "Alumno añadido satisfactoriamente!" || echo "Error al añadir alumno!"
+		echo "home/$username/ciencia-datos-con-r/ciencia-datos-con-r-casos-estudio/.git" >> /home/rsanchezs/repos.txt
+		[ $? -eq 0 ] && echo "Student has been added to the course!"  || echo "Failed to add student!"
+
 	fi
 else
-	echo "Sólo usuarios root pueden añadir usuarios al sistema!"
+	echo "Only root may add a user to the system"
+
 	exit 2
 fi
