@@ -13,12 +13,12 @@ if [ $(id -u) -eq 0 ]; then
 		useradd -m -p $pass $username
 		sudo usermod -a -G alumnos $username
 		mkdir -v /home/$username/ciencia-datos-con-r
-		chown -R $username:alumnos /home/$username/ciencia-datos-con-r
 		cd /home/$username/ciencia-datos-con-r/
 		git clone --verbose  https://github.com/rsanchezs/ciencia-datos-con-r-tareas.git
 		echo "home/$username/ciencia-datos-con-r/ciencia-datos-con-r-tareas/.git" >> /home/rsanchezs/repos.txt
 		git clone --verbose  https://github.com/rsanchezs/ciencia-datos-con-r-casos-estudio.git
 		echo "home/$username/ciencia-datos-con-r/ciencia-datos-con-r-casos-estudio/.git" >> /home/rsanchezs/repos.txt
+		chown -R $username:alumnos /home/$username/ciencia-datos-con-r
 		[ $? -eq 0 ] && echo "Student has been added to the course!"  || echo "Failed to add student!"
 
 	fi
