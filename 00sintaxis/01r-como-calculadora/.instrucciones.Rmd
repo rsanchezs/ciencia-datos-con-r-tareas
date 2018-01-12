@@ -1,12 +1,15 @@
-
 ---
 title: "R una Calculadora Científica"
 output:
   html_document:
     encoding: UTF-8
-    theme: flatly
+    theme: spacelab
     highlight: tango
     css:  ~/custom.css
+    toc: true
+    toc_float: 
+      collapsed: false
+      smooth_scroll: true
 ---
 
 ```{r setup, include=FALSE}

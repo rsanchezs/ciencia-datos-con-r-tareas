@@ -1,13 +1,17 @@
 ---
-title: "Atajos de Teclado"
+title: 
 output:
-  html_document: 
+  html_document:
     encoding: UTF-8
-    theme: flatly
+    theme: spacelab
     highlight: tango
-    css: custom.css
+    css:  ~/custom.css
+    toc: true
+    toc_float: 
+      collapsed: false
+      smooth_scroll: true
 ---
-
+# Atajos de Teclado
 
 La consola de RStudio incluye una variedad de características que nos permitirán 
 trabajar de forma sencilla y eficiente. Esta tarea analiza estas características.
@@ -16,7 +20,7 @@ productividad con R.
 
 
 
-### Historial de Comandos
+## Historial de Comandos
 
 A medida que estemos trabajando con R, con frecuencia desearemos recuperar 
 comandos que hemos ejecutado con anterioridad. La consola de RStudio nos 
@@ -94,8 +98,8 @@ Utiliza lo que has aprendido en el video y en la introducción de la tarea para 
 </div>
 
 <p>
-<a class="btn btn-primary" data-toggle="collapse" href="#hint" aria-expanded="false" aria-controls="collapseExample">
-<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true">     Pista</span></a>
+<a class="btn btn-info btn-lg" data-toggle="collapse" href="#hint" aria-expanded="false" aria-controls="collapseExample">
+<span class="glyphicon glyphicon-question-sign" aria-hidden="true">   </span>  Ayuda</a>
 </p>
 <div class="collapse" id="hint">
 <div class="card card-block">

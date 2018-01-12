@@ -1,11 +1,18 @@
 ---
+title: 
 output:
-  html_document: 
+  html_document:
     encoding: UTF-8
-    theme: flatly
-    highlight: tango 
-    css: custom.css
+    theme: spacelab
+    highlight: tango
+    css:  ~/custom.css
+    toc: true
+    toc_float: 
+      collapsed: false
+      smooth_scroll: true
 ---
+
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, prompt = FALSE, comment = "", collapse = TRUE)
 ```
@@ -232,8 +239,8 @@ tipo entero?
 
 
 <p>
-<a class="btn btn-info" data-toggle="collapse" href="#hint" aria-expanded="false" aria-controls="collapseExample">
-<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true">      __Ayuda__</span></a>
+<a class="btn btn-info btn-lg" data-toggle="collapse" href="#hint" aria-expanded="false" aria-controls="collapseExample">
+<span class="glyphicon glyphicon-question-sign" aria-hidden="true">                 </span>   Ayuda</a>
 </p>
 <div class="collapse" id="hint">
 <div class="card card-block">
@@ -242,6 +249,7 @@ Escribe en la consola __`check()`__ para que se abra en
 el editor un script con la solución a la tarea.
 </div>
 </div>
+
 
 
 

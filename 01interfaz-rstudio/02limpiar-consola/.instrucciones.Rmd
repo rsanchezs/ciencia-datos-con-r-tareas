@@ -1,12 +1,17 @@
 ---
-title: "Atajos de Teclado"
+title: 
 output:
-  html_document: 
+  html_document:
     encoding: UTF-8
-    theme: flatly
+    theme: spacelab
     highlight: tango
-    css: custom.css
+    css:  ~/custom.css
+    toc: true
+    toc_float: 
+      collapsed: false
+      smooth_scroll: true
 ---
+# Atajos de Teclado
 
 Además de los atajos de teclado para el historial de comandos, existen una gran
 variedad de atajos disponibles. Algunos de los más útiles són los siguientes:
@@ -18,7 +23,7 @@ variedad de atajos disponibles. Algunos de los más útiles són los siguientes:
 
 
 
-### ¿Cómo Limpiar la Consola de R?
+## ¿Cómo Limpiar la Consola de R?
 
 Una consola muy llena puede resultar confusa, especialmente cuando trabajemos con
 grandes conjuntos de datos. En esta tarea aprenderemos como limpiar la consola de R.
@@ -45,15 +50,15 @@ datasets::LifeCycleSavings
 ¿Qué comando utilizarías para limpiar la consola?
 
 **Posibles respuestas:**
-<p><span class="glyphicon glyphicon-check" aria-hidden="true">  Command + R</span></p>
-<p><span class="glyphicon glyphicon-check" aria-hidden="true">  Control + R</span></p>
-<p><span class="glyphicon glyphicon-check" aria-hidden="true">  Command + F</span></p>
-<p><span class="glyphicon glyphicon-check" aria-hidden="true">  Control + L</span></p>
+<p><span class="glyphicon glyphicon-check" aria-hidden="true"></span>  Command + R</p>
+<p><span class="glyphicon glyphicon-check" aria-hidden="true"></span>  Control + R</p>
+<p><span class="glyphicon glyphicon-check" aria-hidden="true"></span>  Command + F</p>
+<p><span class="glyphicon glyphicon-check" aria-hidden="true"></span>  Control + L</p>
 </div>
 
 <p>
-<a class="btn btn-primary" data-toggle="collapse" href="#hint" aria-expanded="false" aria-controls="collapseExample">
-<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true">     Pista</span></a>
+<a class="btn btn-info btn-lg" data-toggle="collapse" href="#hint" aria-expanded="false" aria-controls="collapseExample">
+<span class="glyphicon glyphicon-question-sign" aria-hidden="true">     </span> Ayuda</a>
 </p>
 <div class="collapse" id="hint">
 <div class="card card-block">

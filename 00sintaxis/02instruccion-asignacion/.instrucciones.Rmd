@@ -1,12 +1,17 @@
 ---
-title: "Instrucciones de asignación"
+title: 
 output:
-  html_document: 
+  html_document:
     encoding: UTF-8
-    theme: flatly
-    highlight: tango 
-    css: /home/rsanchezs/ciencia-datos-con-r/custom.css
+    theme: spacelab
+    highlight: tango
+    css:  ~/custom.css
+    toc: true
+    toc_float: 
+      collapsed: false
+      smooth_scroll: true
 ---
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, prompt = FALSE, comment = "", collapse = TRUE)
 ```
@@ -14,7 +19,7 @@ knitr::opts_chunk$set(echo = TRUE, prompt = FALSE, comment = "", collapse = TRUE
 
 
 
-## 
+## Instrucciones de Asignación
 
 En el símbolo del sistema de R escribimos las expresiones. El símbolo `<-` es el
 __operador de asignación__:
