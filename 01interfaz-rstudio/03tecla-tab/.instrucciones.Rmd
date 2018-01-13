@@ -1,15 +1,20 @@
 ---
-title: "Atajos de Teclado"
+title: 
 output:
-  html_document: 
+  html_document:
     encoding: UTF-8
-    theme: flatly
+    theme: spacelab
     highlight: tango
-    css: custom.css
+    css:  ~/custom.css
+    toc: true
+    toc_float: 
+      collapsed: false
+      smooth_scroll: true
 ---
 
+# Atajos de Teclado
 
-### Uso de la tecla __TAB__
+## Uso de la tecla __TAB__
 
 
 RStudio nos proporciona el autocompletado de código por medio del uso de la tecla
@@ -50,15 +55,15 @@ paréntesis para que el autocompletado funcione.
 ¿Cúal de los siguientes argumentos no pertenece a la función `read.csv()`?
 
 **Posibles respuestas:**
-<p><span class="glyphicon glyphicon-check" aria-hidden="true">  file</span></p>
-<p><span class="glyphicon glyphicon-check" aria-hidden="true">  fill</span></p>
-<p><span class="glyphicon glyphicon-check" aria-hidden="true">  header</span></p>
-<p><span class="glyphicon glyphicon-check" aria-hidden="true">  xlab</span></p>
+<p><span class="glyphicon glyphicon-check" aria-hidden="true"></span> file</p>
+<p><span class="glyphicon glyphicon-check" aria-hidden="true"></span> fill</p>
+<p><span class="glyphicon glyphicon-check" aria-hidden="true"></span> header</p>
+<p><span class="glyphicon glyphicon-check" aria-hidden="true"></span> xlab</p>
 </div>
 
 <p>
-<a class="btn btn-primary" data-toggle="collapse" href="#hint" aria-expanded="false" aria-controls="collapseExample">
-<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true">     Pista</span></a>
+<a class="btn btn-info btn-lg" data-toggle="collapse" href="#hint" aria-expanded="false" aria-controls="collapseExample">
+<span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Ayuda</a>
 </p>
 <div class="collapse" id="hint">
 <div class="card card-block">

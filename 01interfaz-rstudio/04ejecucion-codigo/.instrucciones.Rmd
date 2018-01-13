@@ -1,11 +1,15 @@
 ---
 title: "Panel del Editor"
 output:
-  html_document: 
+  html_document:
     encoding: UTF-8
-    theme: flatly
+    theme: spacelab
     highlight: tango
-    css: custom.css
+    css:  ~/custom.css
+    toc: true
+    toc_float: 
+      collapsed: false
+      smooth_scroll: true
 ---
 
 
@@ -59,23 +63,22 @@ has aprendido para ejecutar el código.
 ¿Qué código de especie aparece en primer lugar?
 
 **Posibles respuestas:**
-<p><span class="glyphicon glyphicon-check" aria-hidden="true">  87</span></p>
-<p><span class="glyphicon glyphicon-check" aria-hidden="true">  81</span></p>
-<p><span class="glyphicon glyphicon-check" aria-hidden="true">  232</span></p>
-<p><span class="glyphicon glyphicon-check" aria-hidden="true">  80</span></p>
+<p><span class="glyphicon glyphicon-check" aria-hidden="true"></span> 87</p>
+<p><span class="glyphicon glyphicon-check" aria-hidden="true"></span> 81</p>
+<p><span class="glyphicon glyphicon-check" aria-hidden="true"></span> 232</p>
+<p><span class="glyphicon glyphicon-check" aria-hidden="true"></span> 80</p>
 </div>
 
 </br>
 
 <p>
-<a class="btn btn-info" data-toggle="collapse" href="#hint" aria-expanded="false" aria-controls="collapse">
-<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true">     Pista</span></a>
+<a class="btn btn-info btn-lg" data-toggle="collapse" href="#hint" aria-expanded="false" aria-controls="collapse">
+<span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Ayuda</a>
 </p>
 <div class="collapse" id="hint">
 <div class="card card-block">
 <div class="alert alert-info" role="alert">
-Prueba cada una de las opciones presentadas en la tarea para ejecutar el código 
-la cónsola.
+Prueba cada una de las opciones presentadas en la tarea para ejecutar el código en la Consola de R.
 </div>
 </div>
 
