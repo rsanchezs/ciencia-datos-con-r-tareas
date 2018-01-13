@@ -5,6 +5,7 @@
   message("Instrucciones:\n")
   message("1. Abre el proyecto correspondiente a la tarea (*.Rproj).")
   message("2. Escribe go() y presiona la tecla Enter para empezar.")
+  message("2. Escribe bye() y presiona la tecla Enter para salir.")
   
   go <<- function() {
     if(file.exists(".init.R")){
@@ -19,6 +20,8 @@
       message("Instrucciones:\n")
       message("1. Sigue la instrucciones en el panel Viewer.")
       message("2. Escribe check() para comprobar tu solucion.")
+      message("3. Escribe bye() y presiona la tecla Enter para salir.")
+      
     } else {
       cat("\014")
       message("!Debes abrir primero el proyecto correspondiente a la tarea!\n")
@@ -45,7 +48,11 @@
     message("Instrucciones:\n")
     message("1. Abre el proyecto correspondiente a la tarea (*.Rproj).")
     message("2. Escribe go() y presiona la tecla Enter para empezar.")
-    
+    message("3. Escribe bye() y presiona la tecla Enter para salir.")
+  }
+  
+  bye <<- function() {
+    quit(save = "no")
   }
   
 }
