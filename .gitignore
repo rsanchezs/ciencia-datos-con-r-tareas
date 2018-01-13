@@ -1,3 +1,7 @@
 .Rproj.user
 .Ruserdata
 *.html
+.Rprofile
+addstudent.sh
+custom.css
+gitup.sh
