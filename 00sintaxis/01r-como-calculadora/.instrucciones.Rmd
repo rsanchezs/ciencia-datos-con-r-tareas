@@ -16,6 +16,55 @@ output:
 knitr::opts_chunk$set(echo = TRUE, prompt = FALSE, comment = "", collapse = TRUE)
 ```
 
+Cuando abrimos RStudio aparecera la siguiente interface, en la que nos encontraremos la __Consola de R__ en la esquina inferior izquierda:
+
+![](https://i.imgur.com/mmcxuR7.png)
+
+Cuando en la Consola de R escribimos nuestro código después del _prompt_ y presionaremos la tecla <span class="label label-default">Enter</span> nuestro computador
+ejecutará el comando y mostrará el resultado.
+
+![](https://i.imgur.com/sXeKbZ9.png)
+
+
+
+<div class="alert alert-info" role="alert">
+<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+<span class="sr-only">Info:</span>
+__Observa__ en la imagen el símbolo __>__ rodeado por un círculo, esto es conocido como símbolo de sístema (en inglés, prompt)
+
+
+</div>
+
+
+Por ejemplo, si escribimos `1 + 1` y presionamos  <span class="label label-default">Enter</span>, RStudio mostrará: 
+
+```{r}
+1 + 1
+```
+
+![](https://i.imgur.com/glmCTyL.png)
+
+
+<div class="alert alert-info" role="alert">
+<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+<span class="sr-only">Info:</span>
+__Observa__ el [1] que aparece antes del resultado, esto significa que esta línea empieza con el primer valor del resultado.
+</div>
+
+
+
+Algunos comandos devuelven mas de un valor, y su resultado puede ocupar múltiples líneas. Por ejemplo, el comando `1:50` crea una secuencia de números que devuelve 51 valores:
+
+```{r}
+1:50
+```
+
+<div class="alert alert-info" role="alert">
+<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+<span class="sr-only">Info:</span>
+__Observa__ que en este ejemplo aparecen dos nuevos números entre corchetes. Este número unicamente significa que la segunda línea empieza con el valor 24º del resultado, y que la tercera línea empieza con el valor 47º del resultado.
+</div>
+
 
 ## Operadores Básicos
 
@@ -50,6 +99,17 @@ las mas importantes:
 | | **sqrt(x)**        | Devuelve la raíz cuadrada de _x_ |
 |  | **factorial(x)**   | Devuelve el factorial de _x_ |
 |  | **round(x)**       | Redondea _x_ |
+
+
+
+<div class="alert alert-info" role="alert">
+<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+<span class="sr-only">Info:</span>
+
+Escribe `?Math` en la Consola de R para obtener una lista detallada de todas las funciones disponibles.
+
+</div>
+
 
 
 ### ¿Cómo Calcular Logaritmos y Exponenciales en R?
@@ -131,13 +191,12 @@ cos(180*pi/180)
 <div class="alert alert-success" role="alert">
 <span class="glyphicon glyphicon-education" aria-hidden="true"></span>
 <span class="sr-only">Instructions:</span>
-**Problema:**</br>
-Con los conocimientos adquiridos, sigue las instrucciones que encontrarás a 
-continuación para completar el ejercicio en el archivo __script.R__ que encontrarás
-abierto en el editor:
+**Ejercicio:**</br>
+Con los conocimientos adquiridos sigue las instrucciones que encontrarás a 
+continuación para completar el ejercicio:
 </div>
 
-![](https://i.imgur.com/4vSnb9u.png) 
+ 
 
 <div class="panel panel-success">
  <div class="panel-body">
@@ -147,7 +206,7 @@ abierto en el editor:
 <span class="sr-only">Instructions:</span>
 **Instrucciones:**  
 
-- Escribe  __2 ^ 5__ para calcular la potencia de dos elevado a cinco.
+- Escribe  __2 ^ 5__ en la consola para calcular la potencia de dos elevado a cinco.
 </div>
 
 
@@ -156,7 +215,7 @@ abierto en el editor:
 <span class="sr-only">Instructions:</span>
 **Instrucciones:**  
 
-- Escribe __28 %% 6__ para calcular el resto de la división.
+- Escribe __28 %% 6__ en la consola para calcular el resto de la división.
 </div>
 
 <div class="alert alert-success" role="alert">
@@ -165,16 +224,6 @@ abierto en el editor:
 **Instrucciones:**
 
 - Calcula el coseno de un angulo de 120º.
-</div>
-
-
-<div class="alert alert-success" role="alert">
-<span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>
-<span class="sr-only">Instructions:</span>
-**Instrucciones:**  
-
-- Selecciona el código del script mediante __CRTL + A__ y ejecútalo en la consola
-con la combinación de las teclas __CTRL + ENTER__
 </div>
 
 </div>

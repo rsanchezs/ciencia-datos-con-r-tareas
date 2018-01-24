@@ -1,0 +1,252 @@
+---
+title: 
+output:
+  html_document:
+    encoding: UTF-8
+    theme: spacelab
+    highlight: tango
+    css:  ~/custom.css
+    toc: true
+    toc_float: 
+      collapsed: false
+      smooth_scroll: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, prompt = FALSE, comment = "", collapse = TRUE)
+```
+
+## Objetos
+
+R nos permite almacenar datos en un objeto R. Un objeto es tan sólo un nombre que podemos utilizar para recuperar el dato almacenado. Por ejemplo, podemos almacenar datos en un objeto _a_ o _b_. Cuando R se encuentre con el objeto lo reemplazará con el dato almacenado en el mismo:
+
+<pre class="sourceCode r">
+a <- 1  <span class="badge badge-light">1</span>
+a <span class="badge badge-light">2</span>
+## 1
+</pre>
+
+<pre class="sourceCode r">
+a + 2  <span class="badge badge-light">3</span>
+## 3
+</pre>
+
+</br>
+
+<span class="badge badge-light">1</span> En la primera instrucción creamos un objeto R, escogemos un nombre y con la ayuda del __operador de asignación__ (`<-`) guardamos el valor de `1`. Este tipo de instrucción es conocida como __instrucción de asignación__.
+
+<span class="badge badge-light">2</span> En la segunda instrucción preguntamos a R que contiene el objeto. Esto lo conseguimos escribiendo el nombre del objeto en la consola y presionando la tecla <span class="label label-default">Enter</span>. Este método es conocido como __impresión implícita__.
+
+
+
+<span class="badge badge-light">3</span> Podemos utilizar nuestros objetos en nuevas instrucciones. Siguiendo con el ejemplo, puesto que el objeto `a` almacena el valor 1, en la instrucción estamos sumando 1 a 2.
+
+<p>
+<a class="btn btn-info" data-toggle="collapse" href="#hint" aria-expanded="false" aria-controls="collapseExample">
+<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true">   Impresión Explícita</span>  </a>
+</p>
+<div class="collapse" id="hint">
+<div class="card card-block">
+<div class="alert alert-info" role="alert">
+Cuando trabajemos en scripts, funciones o algoritmos que resuelvan un problema muy largo, en ocasiones necesitaremos de la ayuda de la función `print()`
+para mostrar nuestros objetos, puesto que la impresión implícita no trabaja en estos contextos.
+
+```{r echo=FALSE}
+a <- 1
+```
+
+
+```{r}
+print(a)
+```
+</div>
+</div>
+</div>
+
+## Panel del Entorno
+
+Cuando creamos objetos en nuestra sesión R, estos se mostrarán en el panel del entorno de RStudio, como se muestra en la figura. Este panel contiene todos los objetos que hemos creados desde que hemos abierto RStudio.
+
+
+![](https://i.imgur.com/I16Edhi.png)
+
+<div class="alert alert-info" role="alert">
+<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+<span class="sr-only">Info:</span>
+Desde la consola de R podemos obtener una lista de los nombres de los objetos que hemos creado con la ayuda de la función `ls()`:
+
+```{r}
+ls()
+```
+
+</div>
+
+
+
+## Nombre de los objetos
+
+Podemos dar nombre a nuestros objetos R con el sustantivo que deseemos, pero existen unas reglas. En primer lugar, un nombre no puede empezar con un número. En segundo lugar, tampoco podemos usar los siguientes símbolos: `^`, `!`, `$`, `@`, `+`, `-`, `/`, o `*`.
+
+<div class="alert alert-success" role="alert">
+<span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+<span class="sr-only">Exercise:</span>
+__Ejemplos:__
+
+```{r eval=FALSE}
+a
+b
+FOO
+mi_variable
+.mes
+```
+
+</div>
+
+<div class="alert alert-danger" role="alert">
+<span class="glyphicon glyphicon-alert" aria-hidden="true"></span>
+<span class="sr-only">Alert:</span>
+__Nombres que causan error:__
+
+```{r eval=FALSE}
+1trial
+$
+^median
+2nd
+!mal
+```
+
+</div>
+
+<div class="alert alert-info" role="alert">
+<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+<span class="sr-only">Info:</span>
+__R__ también tiene en cuenta la mayúsculas (en inglés, case-sensitive), así por ejempo los objetos `nombre` y `Nombre` referencian a objetos diferentes:
+
+```{r}
+Nombre <- 1
+nombre <- 0
+```
+
+```{r}
+Nombre + 1
+```
+
+</div>
+
+<div class="alert alert-success" role="alert">
+<span class="glyphicon glyphicon-education" aria-hidden="true"></span>
+<span class="sr-only">Instructions:</span>
+**Ejercicio:**</br>
+Con los conocimientos adquiridos sigue las instrucciones que encontrarás a 
+continuación para completar el ejercicio en el __script.R__ que encontrarás abierto en el editor.
+</div>
+
+ 
+
+<div class="panel panel-success">
+<div class="panel-body">
+
+<div class="alert alert-success" role="alert">
+<span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>
+<span class="sr-only">Instructions:</span>
+**Instrucciones:**  
+Escribe el siguiente código, el cuál asigna los valores 10 y 20 a los objetos `x` e `y`:
+
+```{r}
+x <- 10
+y <- 20
+```
+
+</div>
+
+<div class="alert alert-success" role="alert">
+<span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+<span class="sr-only">Exercise:</span>
+**Ejercicio 1:** </br>
+Calcula el producto de `x` e `y`.
+</div>
+
+<div class="alert alert-success" role="alert">
+<span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+<span class="sr-only">Exercise:</span>
+**Ejercicio 2:** </br>
+Almacena el resultado en un nuevo objeto de nombre `z`.
+</div>
+ 
+<div class="alert alert-success" role="alert">
+<span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+<span class="sr-only">Exercise:</span>
+**Ejercicio 3:** </br>
+Inspecciona tu espacio de trabajo con la función `ls()`o desde la pestaña del <span class="badge badge-primary">Entorno</span> de RStudio y busca los tres objetos que has creado.
+</div>
+
+<div class="alert alert-success" role="alert">
+<span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>
+<span class="sr-only">Instructions:</span>
+**Instrucciones:**  
+Crea un vector que contenga los objetos `x`, `y` y `z`. Utiliza la siguiente instrucción:
+
+```{r eval=FALSE}
+mi_primer_vector <- c(x, y, z)
+```
+
+</div>
+
+<div class="alert alert-success" role="alert">
+<span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+<span class="sr-only">Exercise:</span>
+**Ejercicio 4:** </br>
+Encuentra el mínimo, máximo, longitud y varianza de `mi_primer_vector`. _Pista:_ Utiliza las funciones `min()`, `max()`, `length()` y `var()`.
+</div>
+
+</div>
+</div>
+
+
+
+<div class="alert alert-warning" role="alert">
+<span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+<span class="sr-only">Question:</span>
+**Pregunta 1:**  
+
+¿Cuál es el valor más pequeño en `mi_primer_vector`?
+</div>
+
+
+<div class="alert alert-warning" role="alert">
+<span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+<span class="sr-only">Question:</span>
+**Pregunta 2:**  
+
+¿Cuál es el valor más grande en `mi_primer_vector`?
+</div>
+
+
+<div class="alert alert-warning" role="alert">
+<span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+<span class="sr-only">Question:</span>
+**Pregunta 3:**  
+
+¿Cuál es la longitud de `mi_primer_vector`?
+</div>
+
+<div class="alert alert-warning" role="alert">
+<span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+<span class="sr-only">Question:</span>
+**Pregunta 4:**  
+¿Cuál es la varianza de `mi_primer_vector`?
+</div>
+
+
+
+<div class="alert alert-info" role="alert">
+<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+<span class="sr-only">Info:</span>
+**Recuerda:**</br>
+- Escribe en la consola `check()` para comprobar tu solución.
+
+</div>
+
+
+ 
+ 
