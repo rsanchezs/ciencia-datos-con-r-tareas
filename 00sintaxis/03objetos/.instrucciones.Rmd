@@ -43,7 +43,8 @@ a + 2  <span class="badge badge-light">3</span>
 
 <p>
 <a class="btn btn-info" data-toggle="collapse" href="#hint" aria-expanded="false" aria-controls="collapseExample">
-<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true">   Impresión Explícita</span>  </a>
+<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"> </span>   Impresión Explícita</a>
+ 
 </p>
 <div class="collapse" id="hint">
 <div class="card card-block">

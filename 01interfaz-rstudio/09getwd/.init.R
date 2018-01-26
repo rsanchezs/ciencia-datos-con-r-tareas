@@ -4,3 +4,5 @@ if (file.exists("script.R")){
 }
 
 
+# Cambiamos directorio de trabajo
+setwd("dir2")

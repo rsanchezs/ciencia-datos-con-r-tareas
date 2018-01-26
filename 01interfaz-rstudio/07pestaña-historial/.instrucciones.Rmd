@@ -1,11 +1,15 @@
 ---
-title: "Pestaña del Historial"
+title: Historial de Comandos
 output:
-  html_document: 
+  html_document:
     encoding: UTF-8
-    theme: flatly
+    theme: spacelab
     highlight: tango
-    css: custom.css
+    css:  ~/custom.css
+    toc: true
+    toc_float: 
+      collapsed: false
+      smooth_scroll: true
 ---
 
 El IDE RStudio mantiene una base de datos de todos los comandos que hemos introducido
@@ -45,11 +49,11 @@ obtendremos el comando dentro de su contexto:
 Los comandos seleccionados en la pestaña del Historial pueden ser usados de dos 
 formas diferentes:
 
-__1. Send to Console:__ Envia el comando(s) seleccionados a la Consola. Observa que,
+1. <span class="badge badge-primary">Send to Console</span> Envia el comando(s) seleccionados a la Consola. Observa que,
 los comandos son enviados a la consola pero no són ejecutados hasta que no presionas
-la tecla __Enter__.
+la tecla <span class="label label-default">Enter</span>.
 
-__2. Insert into Source:__ Envia el comando(s) seleccionados al documento activo del
+2. <span class="badge badge-primary">Insert into Source</span> Envia el comando(s) seleccionados al documento activo del
 Editos. Si no existe ningún documento, entonces RStudio creará por nosotros un nuevo
 documento.
 
@@ -84,7 +88,7 @@ ellos:
 </br>
 
 <p>
-<a class="btn btn-primary" data-toggle="collapse" href="#hint" aria-expanded="false" aria-controls="collapseExample">
+<a class="btn btn-info" data-toggle="collapse" href="#hint" aria-expanded="false" aria-controls="collapseExample">
 <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true">     Pista</span></a>
 </p>
 <div class="collapse" id="hint">

@@ -21,8 +21,9 @@ ejecutados son pasados a la consola dónde su resultado también aparece).
 ### Ejecución de una Línea
 
 Para ejecutar una línea de código fuente dónde el cursor está situado es ese 
-momento podemos utilizar la combinación de teclas __Ctrl + Enter__ (o mediante
-el botón __Run__ de la barra de tareas):
+momento podemos utilizar la combinación de teclas <span class="label label-default">Ctrl</span><span class="glyphicon glyphicon-plus" aria-hidden="true"></span><span class="label label-default">Enter</span> (o mediante
+el botón <span class="badge badge-primary">Run</span>
+ de la barra de tareas):
 
 ![](https://i.imgur.com/QIgLyl3.png)
 
@@ -34,14 +35,15 @@ línea.
 
 Existen tres formas de ejecutar múltiples líneas desde el editor:
 
-- Seleccionando las líneas y utilizando el atajo de teclado __Ctrl + Enter__ (o
-mediante el botón __Run__ de la barra de tareas).
+- Seleccionando las líneas y utilizando el atajo de teclado <span class="label label-default">Ctrl</span><span class="glyphicon glyphicon-plus" aria-hidden="true"></span><span class="label label-default">Enter</span>  (o
+mediante el botón <span class="badge badge-primary">Run</span>de la barra de tareas).
 - Después de ejecutar una selección de código, usar __Re Run Previous Region__ con
-el atajo de teclado __Ctrl + Shift + P__ (o su botón asociado en la barra de tareas).
+el atajo de teclado <span class="label label-default">Ctrl</span><span class="glyphicon glyphicon-plus" aria-hidden="true"></span><span class="label label-default">Shift</span><span class="glyphicon glyphicon-plus" aria-hidden="true"></span><span class="label label-default">P</span> (o su botón asociado en la barra de tareas).
 Esto es útil si hemos realizado algún cambio en nuestro código y deseamos comprobar
 los resultados.
-- Ejecutar el documento entero mediante __Ctrl + Shift + Enter__ (o mediante el 
-botón __Source__ de la barra de tareas).
+- Ejecutar el documento entero mediante <span class="label label-default">Ctrl</span><span class="glyphicon glyphicon-plus" aria-hidden="true"></span><span class="label label-default">Shift</span><span class="glyphicon glyphicon-plus" aria-hidden="true"></span><span class="label label-default">Enter</span> (o mediante el 
+botón <span class="badge badge-primary">Source</span>
+ de la barra de tareas).
 
 </br>
 
@@ -72,7 +74,7 @@ has aprendido para ejecutar el código.
 </br>
 
 <p>
-<a class="btn btn-info btn-lg" data-toggle="collapse" href="#hint" aria-expanded="false" aria-controls="collapse">
+<a class="btn btn-info" data-toggle="collapse" href="#hint" aria-expanded="false" aria-controls="collapse">
 <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Ayuda</a>
 </p>
 <div class="collapse" id="hint">

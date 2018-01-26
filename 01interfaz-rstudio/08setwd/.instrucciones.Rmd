@@ -1,42 +1,41 @@
 ---
 title: "Establecer Directorio de Trabajo"
 output:
-  html_document: 
+  html_document:
     encoding: UTF-8
-    theme: flatly
+    theme: spacelab
     highlight: tango
-    css: custom.css
+    css:  ~/custom.css
 ---
 
 
 
 Podemos establecer nuestro directorio de trabajo desde el panel de Archivos, desde
 el cual podemos navegar y seleccionar el directorio. A continuación, podemos 
-establecer el directorio de trabajo haciendo clic en `More > Set As Working Directory`. 
+establecer el directorio de trabajo haciendo clic en
+<span class="badge badge-primary">More</span><span class="badge badge-primary">Set As Working Directory</span>.
 
-
-![](https://i.imgur.com/JLcFMRh.png)
-
+<a href="https://imgur.com/xIxFJ7e"><img src="https://i.imgur.com/xIxFJ7e.gif" title="source: imgur.com" /></a>
 
 <div class="alert alert-warning" role="alert">
 <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
 <span class="sr-only">Question:</span>
 **Pregunta:**</br>
 También podemos establecer nuestro directorio de trabajo mediante una función.
-¿A que función nos estamos refiriendo?
+¿A que función nos estamos refiriendo?</br></br>
 
-**Posibles respuestas:**
-<p><span class="glyphicon glyphicon-check" aria-hidden="true">  `setupwd()`</span></p>
-<p><span class="glyphicon glyphicon-check" aria-hidden="true">  `workingdirectory()`</span></p>
-<p><span class="glyphicon glyphicon-check" aria-hidden="true">  `setworkingdirectory()`</span></p>
-<p><span class="glyphicon glyphicon-check" aria-hidden="true">  `setwd()`</span></p>
+**Posibles respuestas:**</br></br>
+<p><span class="glyphicon glyphicon-check" aria-hidden="true"></span>  __setupwd()__</p>
+<p><span class="glyphicon glyphicon-check" aria-hidden="true"></span>  __workingdirectory()__</p>
+<p><span class="glyphicon glyphicon-check" aria-hidden="true"></span>  __setworkingdirectory()__</p>
+<p><span class="glyphicon glyphicon-check" aria-hidden="true"></span>  __setwd()__</p>
 </div>
 
 </br>
 
 <p>
-<a class="btn btn-primary" data-toggle="collapse" href="#hint" aria-expanded="false" aria-controls="collapseExample">
-<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true">     Pista</span></a>
+<a class="btn btn-info" data-toggle="collapse" href="#hint" aria-expanded="false" aria-controls="collapseExample">
+<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>  Ayuda</a>
 </p>
 <div class="collapse" id="hint">
 <div class="card card-block">

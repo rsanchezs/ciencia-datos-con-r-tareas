@@ -1,14 +1,17 @@
 ---
 title: "Visualizador de Datos"
 output:
-  html_document: 
+  html_document:
     encoding: UTF-8
-    theme: flatly
-    highlight: tango 
-    css: custom.css
+    theme: spacelab
+    highlight: tango
+    css:  ~/custom.css
+    toc: true
+    toc_float: 
+      collapsed: false
+      smooth_scroll: true
 ---
 
-## Introducción
 
 RStudio incluye un visualizador de datos que nos permite inspeccionar en data frames y otro tipo de estructuras de formato rectangular.
 

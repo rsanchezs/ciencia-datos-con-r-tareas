@@ -1,19 +1,20 @@
 ---
-title: "Obtener el Directorio de Trabajo"
+title: "Obtener Directorio de Trabajo"
 output:
-  html_document: 
+  html_document:
     encoding: UTF-8
-    theme: flatly
+    theme: spacelab
     highlight: tango
-    css: custom.css
+    css:  ~/custom.css
 ---
+
 
 En la tarea anterior hemos visto que con la ayuda de la función `setwd()` podemos
 establecer nuestro directorio de trabajo.
 
-Por otro lado, podemos obtener nuestro directorio de trabajo ejecutando `getwd()`
-en la consola.
+Por otro lado, podemos obtener nuestro directorio de trabajo ejecutando `getwd()`en la consola. En RStudio podemos hacerlo desde la pestaña <span class="badge badge-primary">File</span><span class="badge badge-primary">More</span><span class="badge badge-primary">Go to Working Directory</span>:
 
+<a href="https://imgur.com/4h1EIVZ"><img src="https://i.imgur.com/4h1EIVZ.gif" title="source: imgur.com" /></a>
 
 <div class="alert alert-warning" role="alert">
 <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
@@ -21,18 +22,18 @@ en la consola.
 **Pregunta:**</br></br>
 Después de ejecutar `getwd()`en la consola, ¿Cuál de los siguientes directorios
 es el directorio de trabajo?</br></br>
-**Posibles respuestas:**</br>
-<p><span class="glyphicon glyphicon-check" aria-hidden="true">  `dir1`</span></p>
-<p><span class="glyphicon glyphicon-check" aria-hidden="true">  `dir2`</span></p>
-<p><span class="glyphicon glyphicon-check" aria-hidden="true">  `dir3`</span></p>
-<p><span class="glyphicon glyphicon-check" aria-hidden="true">  `dir4`</span></p>
+**Posibles respuestas:**</br></br>
+<p><span class="glyphicon glyphicon-check" aria-hidden="true"></span>  __dir1__</p>
+<p><span class="glyphicon glyphicon-check" aria-hidden="true"></span>  __dir2__</p>
+<p><span class="glyphicon glyphicon-check" aria-hidden="true"></span>  __dir3__</p>
+<p><span class="glyphicon glyphicon-check" aria-hidden="true"></span>  __dir4__</p>
 </div>
 
 </br>
 
 <p>
 <a class="btn btn-info" data-toggle="collapse" href="#hint" aria-expanded="false" aria-controls="collapseExample">
-<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true">     Pista</span></a>
+<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>  Pista</a>
 </p>
 <div class="collapse" id="hint">
 <div class="card card-block">

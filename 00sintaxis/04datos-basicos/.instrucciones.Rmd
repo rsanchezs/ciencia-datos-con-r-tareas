@@ -239,7 +239,7 @@ tipo entero?
 
 
 <p>
-<a class="btn btn-info btn-lg" data-toggle="collapse" href="#hint" aria-expanded="false" aria-controls="collapseExample">
+<a class="btn btn-info " data-toggle="collapse" href="#hint" aria-expanded="false" aria-controls="collapseExample">
 <span class="glyphicon glyphicon-question-sign" aria-hidden="true">                 </span>   Ayuda</a>
 </p>
 <div class="collapse" id="hint">

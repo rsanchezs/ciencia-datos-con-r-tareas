@@ -1,12 +1,13 @@
 ---
 title: "Panel del Entorno"
 output:
-  html_document: 
+  html_document:
     encoding: UTF-8
-    theme: flatly
+    theme: spacelab
     highlight: tango
-    css: custom.css
+    css:  ~/custom.css
 ---
+
 
 
 El panel del __Entorno__ es una de mayores ventajas de RStudio. Este panel nos 
@@ -16,14 +17,14 @@ ver una lista de todos los datos, valores y funciones.
 Si hacemos clic en la flecha azul o blanca al princio del nombre de un objeto,
 podemos ver su estructura. Esto es básicamente la salida de la función `str()`.
 
-![](https://i.imgur.com/iydOUfJ.png)
+<a href="https://imgur.com/yBay6kA"><img src="https://i.imgur.com/yBay6kA.gif" title="source: imgur.com" /></a>
 
 El navegador del __Entorno__ nos muestra el número de observaciones y el número de
 variables en la segunda columa. Si deseamos ver un dataset en formato de hoja de
 cálculo en el visualizador de datos podemos hacer clic en el botón "tabla" al final
 de la línea.
 
-![](https://i.imgur.com/8QS8Ui4.png)
+<a href="https://imgur.com/CxAI2wH"><img src="https://i.imgur.com/CxAI2wH.gif" title="source: imgur.com" /></a>
 
 
 
@@ -53,8 +54,8 @@ de la línea.
 </br>
 
 <p>
-<a class="btn btn-primary" data-toggle="collapse" href="#hint" aria-expanded="false" aria-controls="collapseExample">
-<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true">     Pista</span></a>
+<a class="btn btn-info" data-toggle="collapse" href="#hint" aria-expanded="false" aria-controls="collapseExample">
+<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>  Ayuda</a>
 </p>
 <div class="collapse" id="hint">
 <div class="card card-block">
