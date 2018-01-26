@@ -1,0 +1,155 @@
+---
+title: "Scripts"
+output:
+  html_document:
+    encoding: UTF-8
+    theme: spacelab
+    highlight: tango
+    css:  ~/custom.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, prompt = FALSE, comment = "", collapse = TRUE)
+```
+
+Un script en R es un archivo de texto para guardar nuestro código R. Podemos abrir un script R en RStudio navegando por <span class="badge badge-primary">File</span><span class="badge badge-primary">New File</span><span class="badge badge-primary">R script</span> en la barra de menús. Rstudio abrirá un script encima del panel de la consola:
+
+![](https://i.imgur.com/Z2dfCd4.png)
+
+<div class="alert alert-info" role="alert">
+<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+<span class="sr-only">Info:</span></br>
+__Recomendamos__ que escribas y edites todo tu código en un script antes de ejecutarlo en la consola. Este hábito crea un registro reproducible de nuestro trabajo que además podemos guardar para utilizar de nuevo. Para guardar un archivo, selecciona el panel del editor y navega a <span class="badge badge-primary">File</span><span class="badge badge-primary">Save as</span> en la barra de menus.
+
+
+</div>
+
+
+
+
+RStudio nos proporciona un conjunto de características que nos permiten ejecutar el código de nuestros scripts directamente en la consola:
+
+1. Podemos ejecutar __una línea de código__ haciendo clic en el bóton <span class="label label-default">Run</span>.
+
+
+2. Lograremos ejecutar un __conjunto de líneas__ seleccionándolas y haciendo clic en <span class="label label-default">Run</span>. 
+
+3. Seremos capaces de ejecutar el __documento entero__ haciendo clic en  <span class="label label-default">Source</span>:
+
+![](https://i.imgur.com/vv0hUbc.png)
+
+
+<div class="alert alert-info" role="alert">
+<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+<span class="sr-only">Info:</span>
+__Atajo de teclado__</br>
+Podemos utilizar <span class="label label-default">Control</span><span class="glyphicon glyphicon-plus" aria-hidden="true"></span><span class="label label-default">Enter</span> para ejecutar nuestro código.
+</div>
+
+
+<div class="alert alert-success" role="alert">
+<span class="glyphicon glyphicon-education" aria-hidden="true"></span>
+<span class="sr-only">Instructions:</span>
+**Ejercicio:**</br>
+Con los conocimientos adquiridos sigue las instrucciones que encontrarás a 
+continuación para completar el ejercicio en el __script.R__ que encontrarás abierto en el editor.
+</div>
+
+ 
+
+<div class="panel panel-success">
+<div class="panel-body">
+
+<div class="alert alert-success" role="alert">
+<span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>
+<span class="sr-only">Instructions:</span>
+**Instrucciones:**  
+Escribe en la Consola de R `?log`. Observa que, RStudio abre una página de ayuda en la pestaña de ayuda en la esquina inferior derecha.
+
+</div>
+
+ 
+<div class="alert alert-success" role="alert">
+<span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>
+<span class="sr-only">Instructions:</span>
+**Instrucciones:**  
+
+- Calcula el logaritmo en base 10 de `100` y multiplica el resultado por el coseno de $\pi$. _Pista_: véase `?log` y `?pi`.
+</div>
+
+
+<div class="alert alert-success" role="alert">
+<span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>
+<span class="sr-only">Instructions:</span>
+**Instrucciones:**  
+
+- Calcula la suma acumulada de los números 2, 3, 4, 5, 6. _Pista_: véase `?cumsum`. 
+</div>
+
+<div class="alert alert-success" role="alert">
+<span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>
+<span class="sr-only">Instructions:</span>
+**Instrucciones:**
+
+- Calcula la suma acumulada de los números del ejercicio anterior, pero en este caso en orden inverso. _Pista:_ Usa la función `rev`.
+
+</div>
+
+
+
+<div class="alert alert-success" role="alert">
+<span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>
+<span class="sr-only">Instructions:</span>
+**Instrucciones:**
+
+- Crea un muestra de 10 números aleatorios entre 0 y 100, redondeados al número entero más cercano. _Pista:_ Puedes hacer uso de la función `sample` o una combinación de `round` y `runif`.
+</div>
+</div>
+
+</div>
+
+
+<div class="alert alert-warning" role="alert">
+<span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+<span class="sr-only">Question:</span>
+**Pregunta 1:**  
+
+¿Cuál es el resultado de $\log _{ 10 }{ 100 }  * cos\pi$?
+</div>
+
+
+<div class="alert alert-warning" role="alert">
+<span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+<span class="sr-only">Question:</span>
+**Pregunta 2:**  
+
+¿Cúal es la suma acumulada de los números 2, 3, 4, 5, 6?
+</div>
+
+
+<div class="alert alert-warning" role="alert">
+<span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+<span class="sr-only">Question:</span>
+**Pregunta 3:**  
+¿Cuál es la suma acumulada de los números del ejercicio anterior, pero en orden inverso?
+</div>
+
+<div class="alert alert-warning" role="alert">
+<span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+<span class="sr-only">Question:</span>
+**Pregunta 4:**  
+¿Qué código has utilizado para crear la muestra del ejercicio 4?
+</div>
+
+<p>
+<a class="btn btn-info" data-toggle="collapse" href="#hint" aria-expanded="false" aria-controls="collapseExample">
+<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>  Ayuda</a>
+</p>
+<div class="collapse" id="hint">
+<div class="card card-block">
+<div class="alert alert-info" role="alert">
+- Escribe en la consola `check()` para abrir la solución de la tarea.
+- __Recuerda__ que podemos ejecutar el código de nuestros scripts mediante <span class="badge badge-primary">Run</span> o el atajo de teclado <span class="label label-default">Control</span><span class="glyphicon glyphicon-plus" aria-hidden="true"></span><span class="label label-default">Enter</span>.
+
+</div>
+</div>
