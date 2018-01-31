@@ -1,5 +1,5 @@
 ---
-title: "Scripts"
+title: "Pestaña Paquetes"
 output:
   html_document:
     encoding: UTF-8
@@ -12,144 +12,72 @@ output:
 knitr::opts_chunk$set(echo = TRUE, prompt = FALSE, comment = "", collapse = TRUE)
 ```
 
-Un script en R es un archivo de texto para guardar nuestro código R. Podemos abrir un script R en RStudio navegando por <span class="badge badge-primary">File</span><span class="badge badge-primary">New File</span><span class="badge badge-primary">R script</span> en la barra de menús. Rstudio abrirá un script encima del panel de la consola:
+Seleccionar la casilla de verificación situada a la izquierda del paquete en la __Pestaña de Paquetes__ es equivalente al uso de la función __`library()`__ en la consola; esto carga el paquete seleccionado.
 
-![](https://i.imgur.com/Z2dfCd4.png)
+</br>
+</br>
 
-<div class="alert alert-info" role="alert">
-<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
-<span class="sr-only">Info:</span></br>
-__Recomendamos__ que escribas y edites todo tu código en un script antes de ejecutarlo en la consola. Este hábito crea un registro reproducible de nuestro trabajo que además podemos guardar para utilizar de nuevo. Para guardar un archivo, selecciona el panel del editor y navega a <span class="badge badge-primary">File</span><span class="badge badge-primary">Save as</span> en la barra de menus.
+<a href="https://imgur.com/SpVKb2s"><img src="https://i.imgur.com/SpVKb2s.gif" title="source: imgur.com" /></a>
 
-
-</div>
-
-
-
-
-RStudio nos proporciona un conjunto de características que nos permiten ejecutar el código de nuestros scripts directamente en la consola:
-
-1. Podemos ejecutar __una línea de código__ haciendo clic en el bóton <span class="label label-default">Run</span>.
-
-
-2. Lograremos ejecutar un __conjunto de líneas__ seleccionándolas y haciendo clic en <span class="label label-default">Run</span>. 
-
-3. Seremos capaces de ejecutar el __documento entero__ haciendo clic en  <span class="label label-default">Source</span>:
-
-![](https://i.imgur.com/vv0hUbc.png)
-
-
-<div class="alert alert-info" role="alert">
-<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-<span class="sr-only">Info:</span>
-__Atajo de teclado__</br>
-Podemos utilizar <span class="label label-default">Control</span><span class="glyphicon glyphicon-plus" aria-hidden="true"></span><span class="label label-default">Enter</span> para ejecutar nuestro código.
-</div>
+</br>
+</br>
 
 
 <div class="alert alert-success" role="alert">
 <span class="glyphicon glyphicon-education" aria-hidden="true"></span>
 <span class="sr-only">Instructions:</span>
 **Ejercicio:**</br>
-Con los conocimientos adquiridos sigue las instrucciones que encontrarás a 
-continuación para completar el ejercicio en el __script.R__ que encontrarás abierto en el editor.
+Con los conocimientos adquiridos sigue las instrucciones que encontrarás a continuación para responder a la pregunta.
+</div>
+
+
+<div class="alert alert-info" role="alert">
+<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+<span class="sr-only">Instructions:</span>
+__Información:__ 
+
+Hemos cargado el paquete __`ggplot2`__ en la sesión. Trata de descargar el
+paquete usando las opciones que encontrarás en la pregunta de selección
+múltiple.
 </div>
 
  
-
-<div class="panel panel-success">
-<div class="panel-body">
-
-<div class="alert alert-success" role="alert">
-<span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>
+<div class="alert alert-info" role="alert">
+<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
 <span class="sr-only">Instructions:</span>
-**Instrucciones:**  
-Escribe en la Consola de R `?log`. Observa que, RStudio abre una página de ayuda en la pestaña de ayuda en la esquina inferior derecha.
+__Ayuda:__ 
 
-</div>
-
- 
-<div class="alert alert-success" role="alert">
-<span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>
-<span class="sr-only">Instructions:</span>
-**Instrucciones:**  
-
-- Calcula el logaritmo en base 10 de `100` y multiplica el resultado por el coseno de $\pi$. _Pista_: véase `?log` y `?pi`.
-</div>
-
-
-<div class="alert alert-success" role="alert">
-<span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>
-<span class="sr-only">Instructions:</span>
-**Instrucciones:**  
-
-- Calcula la suma acumulada de los números 2, 3, 4, 5, 6. _Pista_: véase `?cumsum`. 
-</div>
-
-<div class="alert alert-success" role="alert">
-<span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>
-<span class="sr-only">Instructions:</span>
-**Instrucciones:**
-
-- Calcula la suma acumulada de los números del ejercicio anterior, pero en este caso en orden inverso. _Pista:_ Usa la función `rev`.
-
-</div>
-
-
-
-<div class="alert alert-success" role="alert">
-<span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>
-<span class="sr-only">Instructions:</span>
-**Instrucciones:**
-
-- Crea un muestra de 10 números aleatorios entre 0 y 100, redondeados al número entero más cercano. _Pista:_ Puedes hacer uso de la función `sample` o una combinación de `round` y `runif`.
-</div>
-</div>
-
+Los dos argumentos que debes pasar a la función son `package:ggplot2` y 
+`unload = TRUE` (en este orden).
 </div>
 
 
 <div class="alert alert-warning" role="alert">
 <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
 <span class="sr-only">Question:</span>
-**Pregunta 1:**  
+**Pregunta :**  
 
-¿Cuál es el resultado de $\log _{ 10 }{ 100 }  * cos\pi$?
-</div>
-
-
-<div class="alert alert-warning" role="alert">
-<span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
-<span class="sr-only">Question:</span>
-**Pregunta 2:**  
-
-¿Cúal es la suma acumulada de los números 2, 3, 4, 5, 6?
-</div>
-
-
-<div class="alert alert-warning" role="alert">
-<span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
-<span class="sr-only">Question:</span>
-**Pregunta 3:**  
-¿Cuál es la suma acumulada de los números del ejercicio anterior, pero en orden inverso?
+¿Qué función utilizarías para descargar un paquete de la sesión R?
 </div>
 
 <div class="alert alert-warning" role="alert">
-<span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
-<span class="sr-only">Question:</span>
-**Pregunta 4:**  
-¿Qué código has utilizado para crear la muestra del ejercicio 4?
+<span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>
+**Posibles respuestas:**</br></br>
+<p><span class="glyphicon glyphicon-check" aria-hidden="true"></span>  __unload()__</p>
+<p><span class="glyphicon glyphicon-check" aria-hidden="true"></span>  __removepackage()__</p>
+<p><span class="glyphicon glyphicon-check" aria-hidden="true"></span>  __detach()__</p>
+<p><span class="glyphicon glyphicon-check" aria-hidden="true"></span>  __null()__</p>
 </div>
+
+
 
 <p>
 <a class="btn btn-info" data-toggle="collapse" href="#hint" aria-expanded="false" aria-controls="collapseExample">
-<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>  Ayuda</a>
+<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> Ayuda</a> 
 </p>
 <div class="collapse" id="hint">
 <div class="card card-block">
 <div class="alert alert-info" role="alert">
-- Escribe en la consola `check()` para abrir la solución de la tarea.
-- __Recuerda__ que podemos ejecutar el código de nuestros scripts mediante <span class="badge badge-primary">Run</span> o el atajo de teclado <span class="label label-default">Control</span><span class="glyphicon glyphicon-plus" aria-hidden="true"></span><span class="label label-default">Enter</span>.
-
+Prueba cada una de las opciones con los argumentos __`package:ggplot2`__ y __`unload = TRUE`__. O bien, visualiza de nuevo el video.
 </div>
 </div>

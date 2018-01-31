@@ -3,4 +3,6 @@ if (file.exists("script.R")){
   file.edit("script.R")
 }
 
+# Cargamos paquete 
+library(ggplot2)
 
