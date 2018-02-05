@@ -1,16 +1,18 @@
 ---
+title: "Longitud"
 output:
-  html_document: 
+  html_document:
     encoding: UTF-8
-    theme: flatly
-    highlight: tango 
-    css: custom.css
+    theme: spacelab
+    highlight: tango
+    css:  ~/custom.css
 ---
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, prompt = FALSE, comment = "", collapse = TRUE)
 ```
 
-## Longitud {#longitud}
+
 
 Todos los vectores tienen dos propiedades:
 
@@ -107,7 +109,7 @@ los siguientes elementos: __"Ciencia"__, __"de"__, __"Datos"__, __"con"__, __"R"
 
 <p>
 <a class="btn btn-info" data-toggle="collapse" href="#hint" aria-expanded="false" aria-controls="collapseExample">
-<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true">      __Ayuda__</span></a>
+<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> __Ayuda__</a>
 </p>
 <div class="collapse" id="hint">
 <div class="card card-block">

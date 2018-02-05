@@ -9,8 +9,7 @@ vector_character <- "Ciencia Datos con R"
 
 
 
-# Definición de un nuevo vector de tipo `character` con los elementos:
-#"Ciencia", "Datos", "con", "R"
+# Definición de un nuevo vector de tipo `character` con los elementos: "Ciencia", "Datos", "con", "R"
 my_vector < -
   
   
@@ -19,3 +18,5 @@ my_vector < -
 
   
 # Comprueba cuántos caracteres contiene `my_vector`
+  
+  

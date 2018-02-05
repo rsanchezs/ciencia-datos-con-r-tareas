@@ -7,7 +7,8 @@ numerico <- 42.5
 # Comprueba el tipo de `numerico`
 
 
-# Cambia el texto por "Ciencia de Datos con R"
+# Cambia el texto "cadena caracter" 
+#por "Ciencia de Datos con R"
 caracter <- "cadena caracter"
 
 

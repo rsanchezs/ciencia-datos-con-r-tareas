@@ -1,5 +1,5 @@
 ---
-title: "R una Calculadora Científica"
+title: 
 output:
   html_document:
     encoding: UTF-8
@@ -17,12 +17,16 @@ knitr::opts_chunk$set(echo = TRUE, prompt = FALSE, comment = "", collapse = TRUE
 ```
 
 
+# Vectores
+
+</br>
+
 El tipo más básico de estructura de dato en R es el __vector__. El vector es una estructura compuesta de un número de elementos finitos, homogéneos y donde dicha estructura tiene un tamaño fijo. Finito porque existe un último elemento; homogéneo porque todos los elementos son del mismo tipo y tamaño fijo porque el tamaño del vector
 debe ser conocido en tiempo de ejecución o compilación.
 
 
 
-## Creación de Vectores {#creacion}
+## Creación de Vectores 
 
 Los vectores atómicos pueden ser creados con la función `c()`, que corresponde
 a la sigla de _combinar_:
@@ -49,63 +53,118 @@ vector_character <- c("Hola", "Mundo!")
 ```
 
 
+## Funciones para Vectores
+
 </br>
+
+El poder de __R__ es que la mayoría de funciones aceptan un vector como entrada, lo que simplifica la codificación en muchas situaciones.
+
+Permitidme crear un vertor númerico de 7 elementos:
+
+```{r}
+num <- c(1, 4, 2, 8, 11, 100, 8)
+```
+
+
+En los siguientes ejemplos se muestran algunas operaciones básicas:
+
+```{r}
+# Calcula la suma del vector
+sum(num)
+
+# Calculamos la media, desviación standard y numero de observaciones (longitud)
+
+mean(num)
+
+sd(num)
+
+length(num)
+
+# Algunas funciones devuelven como resultado un nuevo vector, por ejemplo
+
+rev(num) # Invierte los elementos
+
+cumsum(num) # Calcula la suma acumulada
+
+```
+
 </br>
+
+Exiten multitud de funciones que podemos utilizar en los vectores, en la siguiente tabla se muestran algunas de las 
+mas útiles:
+
+</br>
+
+| Función  | Qué hace la función  | 
+|---|---|---|
+| `length`  | Devuelve la longitud del vector  | 
+| `rev`  | Invierte el orden de los elementos de un vector | 
+| `order`  | Ordena los elementos de un vector  |
+| `head`  | Muestra el primer elemento de un vector  |
+| `max`  | Devuelve el valor máximo en un vector  | 
+| `min`  |  Devuelve el valor mínimo en un vector | 
+| `which.max`  | ¿Que elemento de un vector contiene el valor máximo?   | 
+| `which.min`  | ¿Que elemento de un vector contiene el valor mínimo?  | 
+| `mean`  | Calcula la media de un vector  | 
+| `median`  | Calcula la mediana de un vector  | 
+| `var`  | Calcula la varianza de un vector  |
+| `sd`  | Calcula la desviación típica de un vector   | 
+| `cumsum`  |  Devuelve la suma acumulada de un vector |   
+| `unique`  | Lista todos los valores únicos en un vector  | 
+| `round`  |  Redondea los números a un número específico de decimales |
+`
+
 
 <div class="alert alert-success" role="alert">
 <span class="glyphicon glyphicon-education" aria-hidden="true"></span>
 <span class="sr-only">Instructions:</span>
-**Ejercicio:**</br>
-Con los conocimientos adquiridos, sigue las instrucciones que encontrarás a 
-continuación para completar el ejercicio en el archivo __script.R__ que encontrarás
-abierto en el editor.
+__Prueba tú mismo__ </br>
+Algunas de las funciones en la tabla anterior devuelven un único número, otras devuelven un vector de la misma longitud que el vector pasado. Prueba tu mismo las funciones de la tabla con el vector `num` creado.
+
 </div>
 
-<div class="panel panel-success">
+<div class="panel panel-warning">
  <div class="panel-body">
  
- <div class="alert alert-success" role="alert">
-<span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>
-<span class="sr-only">Instructions:</span>
-**Instrucciones:**  
-
-- Completa el código para que el __`vector_logical`__ contenga los elementos:
-__`TRUE`__, __`FALSE`__ y __`TRUE`__ (en este orden).
-</div>
-
-
-<div class="alert alert-success" role="alert">
-<span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>
-<span class="sr-only">Instructions:</span>
-**Instrucciones:**  
-- Completa el código para que el __`vector_character`__ contenga el elemento:
-__"Ciencia de Datos con R"__.
-
-</div>
-
-
-
 <div class="alert alert-warning" role="alert">
 <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
 <span class="sr-only">Question:</span>
-**Pregunta 1:**  
+**Ejercicio 1:**  
+Los valores que se muestran a continuación se corresponden a las cantidades de lluvia de los primeros diez dias del año 2017 en España. Guárdalos en un vector con la ayuda de la función `c()`:
 
-¿Qué función utilizarías para crear un vector?
+`0.1` `0.6` `33.8` `1.9` `9.6` `4.3` `33.7` `0.3` `0.0` `0.1`
+
 </div>
 
 
 <div class="alert alert-warning" role="alert">
 <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
 <span class="sr-only">Question:</span>
-**Pregunta 2:**  
-
-¿Qué instrucciones de código has utilizado para resolver el ejercicio?
+**Ejercicio 2:**  
+¿Cuál es la media de precipitaciones y la desviación estandard?
 </div>
+
+
+<div class="alert alert-warning" role="alert">
+<span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+<span class="sr-only">Question:</span>
+**Ejercicio 3:**  
+Calcula la suma acumulada de precipitaciones a lo largo de los diez dias. Confirma que el último valor de el vector es igual a la suma total de precipitaciones.
+</div>
+
+<div class="alert alert-warning" role="alert">
+<span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+<span class="sr-only">Question:</span>
+**Ejercicio 4:**  
+¿Qué dia de los diez fue el que mas lluvioso?
+</div>
+
+
 
 
 <p>
 <a class="btn btn-info" data-toggle="collapse" href="#hint" aria-expanded="false" aria-controls="collapseExample">
-<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true">      __Ayuda__</span></a>
+<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>   __Ayuda__</a>
 </p>
 <div class="collapse" id="hint">
 <div class="card card-block">

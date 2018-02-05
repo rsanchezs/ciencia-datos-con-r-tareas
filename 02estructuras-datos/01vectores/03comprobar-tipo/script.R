@@ -12,4 +12,4 @@ vector_enteros <-
 # Comprueba si los vectores son de tipo `numeric`
   
   
-# Comprueba si los vectores son de tipo `integer`
+# Comprueba si son numeros reales o enteros

@@ -79,6 +79,8 @@ La búsqueda y los filtros son aditivos, es decir cuando ambos son utilizados ob
 
 </br>
 
+
+
 <p>
 <a class="btn btn-info" data-toggle="collapse" href="#hint" aria-expanded="false" aria-controls="collapseExample">
 <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true">     Pista</span></a>
@@ -89,5 +91,4 @@ La búsqueda y los filtros son aditivos, es decir cuando ambos son utilizados ob
 Haz clic en el nombre de la columna para ordenar los datos de forma asdendente o descendente.
 </div>
 </div>
-
 

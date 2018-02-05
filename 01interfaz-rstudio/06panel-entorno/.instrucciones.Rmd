@@ -60,7 +60,7 @@ de la línea.
 <div class="collapse" id="hint">
 <div class="card card-block">
 <div class="alert alert-info" role="alert">
-Hecha un vistazo en la penstaña del entorno después de ejecutar `mi_codigo.R`. 
+Hecha un vistazo en la pestaña del entorno después de ejecutar `mi_codigo.R`. 
 Observa que la pestaña separa los _valores_ y las _funciones_.
 </div>
 

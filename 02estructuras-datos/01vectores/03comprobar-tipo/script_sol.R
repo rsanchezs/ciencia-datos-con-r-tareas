@@ -15,5 +15,5 @@ is.numeric(vector_reales)
 is.numeric(vector_enteros)
 
 # Comprueba si los vectores son de tipo `integer`
-is.integer(vector_reales)
+is.double(vector_reales)
 is.integer(vector_enteros)
