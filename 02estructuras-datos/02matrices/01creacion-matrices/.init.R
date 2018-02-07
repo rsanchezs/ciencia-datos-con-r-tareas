@@ -4,6 +4,3 @@ if (file.exists("script.R")){
 }
 
 
-# Cargamos los objetos en entorno globar
-load(".RData")
-

@@ -152,7 +152,8 @@ frutas[c("platano", "naranja")]
 <span class="sr-only">Instructions:</span>
 **Ejercicio:**</br>
 Con los conocimientos adquiridos sigue las instrucciones que encontrarás a 
-continuación para completar el ejercicio en el __script.R__ que encontrarás abierto en el editor.
+continuación para completar el ejercicio en el __script.R__ que encontrarás abierto en el editor.</br>
+__Recuerda__ compartir el código con tus compañeros. Para ello copia tu solución en la plataforma.
 </div>
 
  

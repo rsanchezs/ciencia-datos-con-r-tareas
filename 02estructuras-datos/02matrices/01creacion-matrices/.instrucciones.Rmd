@@ -1,0 +1,142 @@
+---
+title: Matrices
+output:
+  html_document:
+    encoding: UTF-8
+    theme: spacelab
+    highlight: tango
+    css:  ~/custom.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, prompt = FALSE, comment = "", collapse = TRUE)
+```
+
+
+
+Una _matriz_ es una extensión de un vector a dos dimensiones, lo que implica que dispone del atributo _dimension_. El atributo dimensión es en si mismo un vector de longitud 2 (numero de filas, numero de columnas). Una matriz se utiliza para representar datos de un único tipo en dos dimensiones.
+
+
+
+
+## Creación de Matrices {#creacion-de-matrices}
+
+
+Para crear matrices utilizaremos la función `matrix()`, la sintaxis es la siguiente
+
+```{r}
+str(matrix)
+```
+
+
+A continuación mostramos la descripción de los argumentos:
+
+- __data__ es el vector que contiene los elementos que formaran parte de la matriz.
+- __nrow__ es el número de filas.
+- __ncol__ es el número de columnas.
+- __byrow__ es un valor lógico. Si es `TRUE` el vector que pasamos será ordenado por filas.
+- __dimnames__ nombres asignado a filas y columnas.
+
+
+Seguidamente se muestra un ejemplo de creación de una matriz:
+
+
+```{r}
+matriz <- matrix(1:12, nrow = 4)
+matriz
+```
+
+
+A partir de un vector, si le añadimos el atributo dimensión podemos obtener una matriz:
+
+
+```{r}
+m <- 1:12
+m
+```
+
+
+
+```{r}
+dim(m) <- c(4, 3)
+m
+```
+
+
+Cuando creamos una matriz, los valores que pasamos son ordenados por columnas. Pero también es posible llenar la matriz por filas especificando el argumento `byrow = TRUE`:
+
+
+```{r}
+matriz <- matrix(1:12, nrow = 4, byrow = TRUE)
+matriz
+```
+
+
+Mediante las funciones `cbind()` y `rbind()` es posible crear matrices por columnas o por filas a partir de dos vectores de la misma longitud:
+
+
+
+```{r}
+v1 <- c(1, 2, 3, 4, 5, 6)
+v2 <- c(7, 8, 9, 10, 11, 12)
+m1 <- cbind(v1, v2)
+m1
+```
+
+```{r}
+v1 <- c(1, 2, 3, 4, 5, 6)
+v2 <- c(7, 8, 9, 10, 11, 12)
+m1 <- rbind(v1, v2)
+m1
+```
+
+
+
+<div class="alert alert-success" role="alert">
+<span class="glyphicon glyphicon-education" aria-hidden="true"></span>
+<span class="sr-only">Instructions:</span>
+**Tarea:**</br>
+Con los conocimientos adquiridos sigue las instrucciones que encontrarás a 
+continuación para completar el ejercicio en el __script.R__ que encontrarás abierto en el editor.</br>
+__Recuerda__ compartir el código con tus compañeros. Para ello copia tu solución en la plataforma.
+</div>
+
+ 
+
+<div class="panel panel-success">
+<div class="panel-body">
+
+<div class="alert alert-success" role="alert">
+<span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+<span class="sr-only">Exercise:</span>
+**Ejercicio 1:** </br>
+Crea tres vectores `x`, `y` y `z` de enteros que contengan tres elementos cada uno. Combina los tres elementos para crear una matriz `A` 3x3.
+</div>
+
+<div class="alert alert-success" role="alert">
+<span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+<span class="sr-only">Exercise:</span>
+**Ejercicio 2:** </br>
+Crea un vector de 12 enteros. Convierte el vector a una matriz `B` con ayuda de la función `matrix()`.
+</div>
+ 
+<div class="alert alert-success" role="alert">
+<span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+<span class="sr-only">Exercise:</span>
+**Ejercicio 3:** </br>
+El argumento `byrow` en `matrix()` es por defecto `FALSE`. Define la matriz `C` con el vector del ejercicio anterior, pero en esta ocasión pasa a la función el argumento `byrow = TRUE` e imprime por pantalla `C` para comprobar las diferencias.
+</div>
+
+<p>
+<a class="btn btn-info" data-toggle="collapse" href="#hint" aria-expanded="false" aria-controls="collapseExample">
+<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> __Ayuda__</a>
+</p>
+<div class="collapse" id="hint">
+<div class="card card-block">
+<div class="alert alert-info" role="alert">
+- Escribe __`check()`__ en la consola de R para comprobar tu solución.
+</div>
+</div>
+
+ 
+ 

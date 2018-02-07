@@ -1,29 +1,25 @@
-# Crea el objeto `x` y asignale el valor 10
-x <- 10
+# Ejercicio 1 -------------------------------------------------------------
 
-# Crea el objeto `y` y asignale el valor 20
-y <- 20
+# Selecciona los valores en `precipitaciones` 
+# donde la lluvia fue mayor que 20.
+precipitaciones[precipitaciones > 20]
 
-# Calcula el producto de `x` e `y`
-x * y
 
-# Almacena el resultado en el objeto `z`
-z <- x * y
+# Ejercicio 2 -------------------------------------------------------------
 
-# Inspecciona tu espacio de trabajo con la función
-ls()
+# Calcula las precipitaciones para los dias donde 
+# las precipitaciones fueron al menos 4
+mean(precipitaciones[precipitaciones >= 4])
 
-# Crea un vector que contenga los objetos `x`, `y` y `z`
-mi_primer_vector <- c(x, y, z)
 
-# Calcula el valor mínimo
-min(mi_primer_vector)
 
-# Calcula el valor máximo
-max(mi_primer_vector)
+# Ejercicio 3 -------------------------------------------------------------
 
-# Encuentra cuantos elementos/valores contiene el vector
-length(mi_primer_vector)
+# Selecciona en el vector los valores que son exactamente
+# cero o exactamente 0.6.
+precipitaciones[precipitaciones == 0 | precipitaciones == 0.6]
 
-# Calcula la varianza 
-var(mi_primer_vector)
+# Solución alternativa
+precipitaciones[precipitaciones %in% c(0, 0.6)]
+
+
