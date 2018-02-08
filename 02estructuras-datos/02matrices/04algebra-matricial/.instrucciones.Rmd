@@ -1,0 +1,156 @@
+---
+title: 
+output:
+  html_document:
+    encoding: UTF-8
+    theme: spacelab
+    highlight: tango
+    css:  ~/custom.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, prompt = FALSE, comment = "", collapse = TRUE)
+```
+
+![](https://i.imgur.com/R14PF5A.png)
+
+
+
+# Albegra Matricial
+
+Esta tarea cubre los operadores y funciones que proporciona R para el álgebra lineal. En los siguientes ejemplos `A` y `B` son matrices y `x` y `b` vectores:
+
+
+
+
+</br>
+
+
+|Funciones |Descripción|
+|---|---|
+| `A * B`  |Multiplicación elemento a elemento   |
+| `A %*%B`  | Multiplicación matricial  |
+| `A %o% B`  | Producto externo. __AB'__  |
+|`crossprod(A,B)crossprod(A)`  |Producto cruz __A'B y A'A__ respectivamente   |
+| `t(A)`  |Traspuesta   |
+| `diag(x)`  | Devuelve un vector con la matriz diagonal   |
+| `diag(A)`  | Devuelve un vector con la matriz diagonal  |
+|`solve(A, b)`   | Devuelve vector __x__ en la equacion __b = Ax__   |
+| `solve(A)`    | Inversa de __A__ donde A es una matriz cuadrada      | 
+| `y <- eigen(A)`      |  __y\$val__ son los valores propios de __A__          |
+|  `y <- eigen(A)`  | __y\$vec__ son los vectores propios de __A__  |
+
+</br>
+</br>
+
+<div class="alert alert-success" role="alert">
+<span class="glyphicon glyphicon-education" aria-hidden="true"></span>
+<span class="sr-only">Instructions:</span>
+__Prueba tú mismo__ </br>
+Define las siguientes matrices:
+```{r}
+A = matrix(c(2, 0, 1, 3), ncol = 2)
+```
+
+```{r}
+B = matrix(c(5, 2, 4, -1), ncol = 2)
+```
+
+y el siguiente vector:
+
+```{r}
+b <- c(7, 4)
+```
+
+</div>
+
+<div class="panel panel-warning">
+ <div class="panel-body">
+ 
+<div class="alert alert-warning" role="alert">
+<span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+<span class="sr-only">Question:</span>
+**Ejercicio 1:**  
+
+a) Calcula __A + B__
+b) Calcula __A - B__
+
+</div>
+
+
+<div class="alert alert-warning" role="alert">
+<span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+<span class="sr-only">Question:</span>
+**Ejercicio 2:** 
+Multiplicación escalar. Encuentra la solución para __aA__ donde `a = 3`.
+
+</div>
+
+
+<div class="alert alert-warning" role="alert">
+<span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+<span class="sr-only">Question:</span>
+**Ejercicio 3:**  
+Con la ayuda de la función `diag` construye una matriz diagonal de tamaño 4 que contenga los siguientes valores en la diagonal: 4, 1, 2, 3.
+</div>
+
+<div class="alert alert-warning" role="alert">
+<span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+<span class="sr-only">Question:</span>
+**Ejercicio 4:**  
+Calcula __AB__ (producto matricial).
+</div>
+
+<div class="alert alert-warning" role="alert">
+<span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+<span class="sr-only">Question:</span>
+**Ejercicio 5:**  
+Calcula la transpuesta de la matriz __A__.
+</div>
+
+<div class="alert alert-warning" role="alert">
+<span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+<span class="sr-only">Question:</span>
+**Ejercicio 6:**  
+Calcula la inversa de la matriz __A__.
+</div>
+
+<div class="alert alert-warning" role="alert">
+<span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+<span class="sr-only">Question:</span>
+**Ejercicio 7:**  
+Calcula el resultado de __x__ en __Ax = b__.
+</div>
+
+<div class="alert alert-warning" role="alert">
+<span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+<span class="sr-only">Question:</span>
+**Ejercicio 8:**  
+Con la ayuda de la función `eigen` calcula los valores y vectores propios para __A__.
+</div>
+
+
+<p>
+<a class="btn btn-info" data-toggle="collapse" href="#hint" aria-expanded="false" aria-controls="collapseExample">
+<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>   __Ayuda__</a>
+</p>
+<div class="collapse" id="hint">
+<div class="card card-block">
+<div class="alert alert-info" role="alert">
+Escribe en la consola __`check()`__ para que se abra en
+el editor un script con la solución a la tarea.
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+

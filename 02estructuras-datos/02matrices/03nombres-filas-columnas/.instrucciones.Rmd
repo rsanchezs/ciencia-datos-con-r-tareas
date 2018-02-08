@@ -1,0 +1,88 @@
+---
+title: 
+output:
+  html_document:
+    encoding: UTF-8
+    theme: spacelab
+    highlight: tango
+    css:  ~/custom.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, prompt = FALSE, comment = "", collapse = TRUE)
+```
+
+# Nombres de las Filas, Columnas y Dimensiones
+
+</br>
+
+<div class="alert alert-success" role="alert">
+<span class="glyphicon glyphicon-education" aria-hidden="true"></span>
+<span class="sr-only">Instructions:</span>
+**Ejercicio:**</br>
+Sigue las instrucciones que encontrarás a 
+continuación para completar el ejercicio.
+</div>
+
+
+ 
+<div class="alert alert-success" role="alert">
+<span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>
+<span class="sr-only">Instructions:</span>
+**Instrucciones:**  
+
+- En el entorno global encontrarás definida la misma matriz `automoviles` de la tarea anterior . A partir de esta matriz obtiene el nombre de las filas y las columnas.
+</div>
+
+
+
+<div class="alert alert-warning" role="alert">
+<span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+<span class="sr-only">Question:</span>
+**Pregunta 1:**  
+¿Cuáles son los nombres de las filas de la matriz `automoviles`?
+</div>
+
+
+<div class="alert alert-warning" role="alert">
+<span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+<span class="sr-only">Question:</span>
+**Pregunta 2:**  
+
+¿Podrías decirme el nombre de las columnas?
+</div>
+
+<div class="alert alert-warning" role="alert">
+<span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+<span class="sr-only">Question:</span>
+**Pregunta 3:**  
+
+¿Qué código utilizarías para cambiar los nombres de las columnas en la matriz `automoviles` por los valores `ford`, `opel` y `renault`?
+</div>
+
+
+<p>
+<a class="btn btn-info" data-toggle="collapse" href="#hint" aria-expanded="false" aria-controls="collapseExample">
+<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>   __Ayuda__</a>
+</p>
+<div class="collapse" id="hint">
+<div class="card card-block">
+<div class="alert alert-info" role="alert">
+- Utiliza las funciones `rownames`  y `colnames` para obtener los nombres de las filas y las columnas.
+- También podemos utilizar las funciones anteriores para asignar los nombres de las filas y columnas a una matriz. 
+
+```{r eval=FALSE}
+colnames(automoviles) <- c("ford", "opel", "renault")
+```
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
