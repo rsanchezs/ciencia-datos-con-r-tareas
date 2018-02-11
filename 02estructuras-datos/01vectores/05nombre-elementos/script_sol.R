@@ -1,40 +1,26 @@
-# Define dos vectores con los valores
-longitud <- c(2.1, 3.4, 2.5, 2.7, 2.9)
-diametro <- c(0.3, 0.5, 0.6, 0.9, 1.1)
-  
-# Calcula la correlación
-cor(longitud, diametro)
+# Define vector `peso`
+peso <- c(73, 83, 85, 70)
 
-# Calcula el volúmen de cada cilindro
-volumen <- longitud * pi * (diametro/2) ^ 2
+# Define vector `altura`
+altura <- c(180, 183, 176, 173)
 
-# Muestra por pantalla los volúmenes
-volumen
+# Asigna los nombres de la tabla a los vectores `peso` y `altura`
+names(peso) <- c("Ruben", "Dani", "David", "Raul")
+names(altura) <- c("Ruben", "Dani", "David", "Raul")
 
-# Calcula la media, desviación standard y el coeficiente de variación
-mean(volumen)
+# Solución alternativa: cuando definimos los vectores
+peso <- c(Ruben = 73, Dani = 83, David = 85, Raul = 70)
+altura <-  c(Ruben = 180, Dani = 183, David = 176, Raul = 173)
 
-sd(volumen)
+# Calculamos el IMC
+IMC <- peso / (altura / 100) ^ 2
 
-sd(volumen) / mean(volumen)
+# Obtenemos el sujeto mas alto
+which.max(altura)
 
-# Define los nuevos vectores 
-longitud1 <- c(2.1, 3.4, 2.5, 2.7, 2.9)
-diametro1 <- c(0.3, 0.5, 0.6, 0.6, 0.9, 1.1)
+# Obtenemos el sujeto mas delgado
+which.min(peso)
 
-# Calcula la correlación y almacenálo en un nuevo vector
-# (error, no se crea el objeto)
-cor1 <- cor(longitud1, diametro1)
+# Obtenemos el sujeto con mayor IMC
+which.max(IMC)
 
-
-# Calcula los volúmenes de los cilindros y almacenalos en un vector
-# (warnig, se crea el objeto)
-volumen1 <- longitud1 * pi * (diametro1 / 2) ^ 2
-
-# Mostramos por pantalla los volúmenes
-volumen1
-
-# Calculamos un resumen de medidas estadísticas
-mean(volumen1)
-sd(volumen1)
-sd(volumen1) / mean(volumen1)

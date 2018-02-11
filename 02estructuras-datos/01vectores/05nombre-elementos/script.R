@@ -1,41 +1,23 @@
-# Define dos vectores con los valores
+# Define vector `peso`
 
 
-
-# Calcula la correlación
-
-
-# Calcula el volúmen de cada cilindro
+# Define vector `altura`
 
 
-# Muestra por pantalla los volúmenes
-
-
-# Calcula la media, desviación standard y el coeficiente de variación
+# Asigna los nombres de la tabla a los vectores `peso` y `altura`
 
 
 
 
-
-# Define los nuevos vectores 
-
+# Calculamos el IMC
 
 
-# Calcula la correlación y almacenálo en un nuevo vector
+# Obtenemos el sujeto mas alto
 
 
+# Obtenemos el sujeto mas delgado
 
 
-# Calcula los volúmenes de los cilindros y almacenalos en un vector
-
-
-
-# Mostramos por pantalla los volúmenes
-
-
-
-# Calculamos un resumen de medidas estadísticas
-
-
+# Obtenemos el sujeto con mayor IMC
 
 

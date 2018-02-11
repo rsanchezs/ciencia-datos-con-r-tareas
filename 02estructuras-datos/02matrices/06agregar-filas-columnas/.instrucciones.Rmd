@@ -1,0 +1,97 @@
+---
+title: "Agregar Filas y Columnas"
+output:
+  html_document:
+    encoding: UTF-8
+    theme: spacelab
+    highlight: tango
+    css:  ~/custom.css
+    fig_width: 2
+    fig_height: 1
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, prompt = FALSE, comment = "", collapse = TRUE)
+```
+
+Podemos emplear las funciones `cbind()` y `rbind()` para agregar filas y columnas a una matriz que hemos creado con anterioridad:
+
+![](https://i.imgur.com/rH9GGgF.png)
+
+
+
+
+<div class="alert alert-success" role="alert">
+<span class="glyphicon glyphicon-education" aria-hidden="true"></span>
+<span class="sr-only">Instructions:</span>
+__Ejercicio __ </br>
+En el entorno global encontrarás definida la matriz `automoviles` de la tarea anterior.
+</div>
+
+<div class="panel panel-warning">
+ <div class="panel-body">
+ 
+<div class="alert alert-warning" role="alert">
+<span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+<span class="sr-only">Question:</span>
+**Pregunta 1:**  
+Actualmente el color azul es el que está de moda. Nuestro concesionario multimarca ha decido adquirir los siguientes vehículos:
+
+|  Marca | Nro. Vehiculos |
+|---|:---:|
+|  Toyota | 8 |
+| Audi  |  5 |
+| Nissan  |  7 |
+
+
+Utiliza la función `rbind()` para incluir los coches adquiridos en la matriz `automoviles`.
+
+</div>
+
+
+<div class="alert alert-warning" role="alert">
+<span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+<span class="sr-only">Question:</span>
+**Pregunta 2:**  
+Nuestro concesionario multimarca ha firmado un contrato para la marca Ford, adquiriendo los siguientes coches:
+
+</br>
+
+|  Color | Nro. Vehiculos   |
+|---|:---:|
+|  Blanco | 2  |
+| Rojo  |  7 |
+| Negro  |  3 |
+| Gris  |  5 |
+|   Azul    |  9 |
+
+</br>
+Añade la nueva marca a la matriz `automoviles` con la ayuda de la función `cbind()`.
+</div>
+
+
+
+<p>
+<a class="btn btn-info" data-toggle="collapse" href="#hint" aria-expanded="false" aria-controls="collapseExample">
+<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>   __Ayuda__</a>
+</p>
+<div class="collapse" id="hint">
+<div class="card card-block">
+<div class="alert alert-info" role="alert">
+- Escribe `check()` en la consola para comprobar tu solución.
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
