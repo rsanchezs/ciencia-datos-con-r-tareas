@@ -1,25 +1,23 @@
 ---
-title: "Agregar Filas y Columnas"
+title: "Eliminar Filas y Columnas"
 output:
   html_document:
     encoding: UTF-8
     theme: spacelab
     highlight: tango
     css:  ~/custom.css
-    fig_width: 2
-    fig_height: 1
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, prompt = FALSE, comment = "", collapse = TRUE)
 ```
 
-Podemos emplear las funciones `cbind()` y `rbind()` para agregar filas y columnas a una matriz que hemos creado con anterioridad:
+</br>
 
-![](https://i.imgur.com/rH9GGgF.png)
+Para eliminar filas utilizaremos la notación `[-i,]`, de forma similar para eliminar columnas utilizaremos la notación `[, -j]`.
 
-
-
+</br>
+</br>
 
 <div class="alert alert-success" role="alert">
 <span class="glyphicon glyphicon-education" aria-hidden="true"></span>
@@ -35,17 +33,7 @@ En el entorno global encontrarás definida la matriz `automoviles` de la tarea a
 <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
 <span class="sr-only">Question:</span>
 **Pregunta 1:**  
-Actualmente el color verde es el que está de moda. Nuestro concesionario multimarca ha decido adquirir los siguientes vehículos:
-
-|  Marca | Nro. Vehiculos |
-|---|:---:|
-|  Toyota | 8 |
-| Audi  |  5 |
-| Nissan  |  7 |
-
-
-Utiliza la función `rbind()` para incluir los coches adquiridos en la matriz `automoviles`.
-
+¿Cómo eliminarías los coches de color verde?
 </div>
 
 
@@ -53,22 +41,9 @@ Utiliza la función `rbind()` para incluir los coches adquiridos en la matriz `a
 <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
 <span class="sr-only">Question:</span>
 **Pregunta 2:**  
-Nuestro concesionario multimarca ha firmado un contrato para la marca Ford, adquiriendo los siguientes coches:
+¿Cómo eliminarías los coches de la marca Ford?
 
-</br>
-
-|  Color | Nro. Vehiculos   |
-|---|:---:|
-|  Blanco | 2  |
-| Rojo  |  7 |
-| Negro  |  3 |
-| Gris  |  5 |
-|   Azul    |  9 |
-
-</br>
-Añade la nueva marca a la matriz `automoviles` con la ayuda de la función `cbind()`.
 </div>
-
 
 
 <p>
