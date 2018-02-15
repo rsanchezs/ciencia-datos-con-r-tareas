@@ -52,7 +52,7 @@ sum(vec1) + sum(vec2)
 <div class="alert alert-success" role="alert">
 <span class="glyphicon glyphicon-education" aria-hidden="true"></span>
 <span class="sr-only">Instructions:</span>
-**Ejercicio:**</br>
+**Prueba tú mismo:**</br>
 Sigue las instrucciones que encontrarás a 
 continuación para completar el ejercicio en el __script.R__ que encontrarás abierto en el editor.
 </div>

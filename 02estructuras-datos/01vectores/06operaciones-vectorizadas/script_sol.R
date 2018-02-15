@@ -1,29 +1,45 @@
-# Crea el objeto `x` y asignale el valor 10
-x <- 10
 
-# Crea el objeto `y` y asignale el valor 20
-y <- 20
+# Ejercicio 1 -------------------------------------------------------------
 
-# Calcula el producto de `x` e `y`
-x * y
+# Define dos vectores `longitud` y `diametro`
+longitud <- c(2.1, 3.4, 2.5, 2.7, 2.9)
+diametro <- c(0.3, 0.5, 0.6, 0.9, 1.1)
 
-# Almacena el resultado en el objeto `z`
-z <- x * y
 
-# Inspecciona tu espacio de trabajo con la función
-ls()
+# Ejercicio 2 -------------------------------------------------------------
 
-# Crea un vector que contenga los objetos `x`, `y` y `z`
-mi_primer_vector <- c(x, y, z)
+# Calcula la correlación entre longitud y diametro
+cor(longitud, diametro)
 
-# Calcula el valor mínimo
-min(mi_primer_vector)
 
-# Calcula el valor máximo
-max(mi_primer_vector)
+# Ejercicio 3 -------------------------------------------------------------
 
-# Encuentra cuantos elementos/valores contiene el vector
-length(mi_primer_vector)
+# Calcula el volúmen de cada cilindro
+volumen <- longitud * pi * (diametro / 2) ^ 2
+# Mostramos por pantalla `volumen`
+volumen
 
-# Calcula la varianza 
-var(mi_primer_vector)
+
+# Ejercicio 4 -------------------------------------------------------------
+
+# Calcula la media, desviación estandard y coeficiente de variación
+mean(volumen)
+sd(volumen)
+sd(volumen) / mean(volumen)
+
+
+# Ejercicio 5 -------------------------------------------------------------
+
+# Define dos nuevos vectores
+longitud1 <- c(2.1, 3.4, 2.5, 2.7, 2.9 )
+diametro1 <- c(0.3, 0.5, 0.6, 0.6, 0.9, 1.1)
+
+
+
+# Ejercicio 6 -------------------------------------------------------------
+
+correlacion <- cor(longitud1, diametro1)
+volumen1 <- longitud1 * pi * (diametro1 / 2) ^ 2
+mean(volumen1)
+sd(volumen1)
+sd(volumen1) / mean(volumen1)

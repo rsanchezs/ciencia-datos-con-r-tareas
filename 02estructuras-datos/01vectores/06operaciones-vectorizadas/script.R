@@ -1,28 +1,44 @@
-# Crea el objeto `x` y asignale el valor 10
+
+# Ejercicio 1 -------------------------------------------------------------
+
+# Define dos vectores `longitud` y `diametro`
+longitud <- 
+diametro <- 
 
 
-# Crea el objeto `y` y asignale el valor 20
+# Ejercicio 2 -------------------------------------------------------------
+
+# Calcula la correlación entre longitud y diametro
 
 
-# Calcula el producto de `x` e `y`
+
+# Ejercicio 3 -------------------------------------------------------------
+
+# Calcula el volúmen de cada cilindro
+volumen <- 
+# Mostramos por pantalla `volumen`
+volumen
 
 
-# Almacena el resultado en el objeto `z`
+# Ejercicio 4 -------------------------------------------------------------
+
+# Calcula la media, desviación estandard y coeficiente de variación
 
 
-# Inspecciona tu espacio de trabajo con la función
+
+# Ejercicio 5 -------------------------------------------------------------
+
+# Define dos nuevos vectores
 
 
-# Crea un vector que contenga los objetos `x`, `y` y `z`
 
 
-# Calcula el valor mínimo
+# Ejercicio 6 -------------------------------------------------------------
 
 
-# Calcula el valor máximo
 
 
-# Encuentra cuantos elementos/valores contiene el vector
 
 
-# Calcula la varianza 
+
+
