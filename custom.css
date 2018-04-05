@@ -1,0 +1,37 @@
+img {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  border:0px;
+  margin:-2px;
+}
+
+div {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  font-size: 15px;
+} 
+
+pre {
+  font-size: 16px;
+}
+
+p {
+  text-align: justify;
+  font-size: 15px;
+}
+
+body {
+  background-color:#fcfcfc;
+    font-size: 15px;
+}
+
+.badge {
+  background-color: rgba(153, 153, 153, 1);
+}
+
+.label {
+  background-color: rgba(153, 153, 153, 1);
+}
+
+
+
