@@ -13,14 +13,16 @@ else
 useradd -m -p $pass $username
 sudo usermod -a -G alumnos $username
 mkdir -v /home/$username/ciencia-datos-con-r
+sudo chgrp -R alumnos ciencia-datos-con-r
+sudo chmod -R g+swX ciencia-datos-con-r
 cd /home/$username/ciencia-datos-con-r/
-  git clone --verbose  https://github.com/rsanchezs/ciencia-datos-con-r-tareas.git
-chgrp -R alumnos ciencia-datos-con-r-tareas
-chmod -R g+swX ciencia-datos-con-r-tareas
+git clone --verbose  https://github.com/rsanchezs/ciencia-datos-con-r-tareas.git
+sudo chgrp -R alumnos ciencia-datos-con-r-tareas
+sudo chmod -R g+swX ciencia-datos-con-r-tareas
 echo "home/$username/ciencia-datos-con-r/ciencia-datos-con-r-tareas/.git" >> /home/rsanchezs/repos.txt
 git clone --verbose  https://github.com/rsanchezs/ciencia-datos-con-r-casos-estudio.git
-chgrp -R alumnos ciencia-datos-con-r-casos-estudio
-chmod -R g+swX ciencia-datos-con-r-casos-estudio
+sudo chgrp -R alumnos ciencia-datos-con-r-casos-estudio
+sudo chmod -R g+swX ciencia-datos-con-r-casos-estudio
 echo "home/$username/ciencia-datos-con-r/ciencia-datos-con-r-casos-estudio/.git" >> /home/rsanchezs/repos.txt
 chown -R $username:alumnos /home/$username/ciencia-datos-con-r
 cp /home/rsanchezs/custom.css /home/$username/

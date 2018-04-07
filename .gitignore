@@ -2,4 +2,7 @@
 .Ruserdata
 *.html
 .Rprofile
-
+addstudent.sh
+gitup.sh
+custom.css
+Rprofile.site
